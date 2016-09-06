@@ -1,0 +1,7 @@
+app_admin_work:
+    resource: "@AppBundle/Resources/config/routing/vbawork.yml"
+    prefix:   /admin_work
+
+homepage:
+    path:     /
+    defaults: { _controller: "AppBundle:Default:index" }

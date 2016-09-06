@@ -1,0 +1,4 @@
+
+skaphandrus_app:
+    resource: "@AppBundle/Resources/config/routing.yml"
+    prefix:   /

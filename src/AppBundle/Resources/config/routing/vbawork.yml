@@ -1,0 +1,30 @@
+admin_work:
+    path:     /
+    defaults: { _controller: "AppBundle:VbaWork:index" }
+
+admin_work_show:
+    path:     /{id}/show
+    defaults: { _controller: "AppBundle:VbaWork:show" }
+
+admin_work_new:
+    path:     /new
+    defaults: { _controller: "AppBundle:VbaWork:new" }
+
+admin_work_create:
+    path:     /create
+    defaults: { _controller: "AppBundle:VbaWork:create" }
+    methods:  POST
+
+admin_work_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AppBundle:VbaWork:edit" }
+
+admin_work_update:
+    path:     /{id}/update
+    defaults: { _controller: "AppBundle:VbaWork:update" }
+    methods:  [POST, PUT]
+
+admin_work_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AppBundle:VbaWork:delete" }
+    methods:  [POST, DELETE]
