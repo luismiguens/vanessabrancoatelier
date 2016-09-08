@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
+    <body>
+      <trans-unit id="8cf04a9734132302f96da8e113e80ce5" resname="Home">
+        <source>Home</source>
+        <target>__Home</target>
+      </trans-unit>
+      <trans-unit id="9e66e6bd4069124578736528a0432752" resname="About Us">
+        <source>About Us</source>
+        <target>__About Us</target>
+      </trans-unit>
+      <trans-unit id="992a0f0542384f1ee5ef51b7cf4ae6c4" resname="Services">
+        <source>Services</source>
+        <target>__Services</target>
+      </trans-unit>
+      <trans-unit id="7b8af977b90a67e053ff2667a26828fe" resname="Works">
+        <source>Works</source>
+        <target>__Works</target>
+      </trans-unit>
+      <trans-unit id="f1cefec9e2196c672a622347f1fbc325" resname="Resume">
+        <source>Resume</source>
+        <target>__Resume</target>
+      </trans-unit>
+      <trans-unit id="bbaff12800505b22a853e8b7f4eb6a22" resname="Contact">
+        <source>Contact</source>
+        <target>__Contact</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
