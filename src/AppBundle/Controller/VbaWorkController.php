@@ -80,6 +80,23 @@ class VbaWorkController extends Controller
     {
         $entity = new VbaWork();
         $form   = $this->createCreateForm($entity);
+        
+        $em = $this->getDoctrine()->getManager();
+        
+        
+//        $volume = new \AppBundle\Entity\SkUnitVolume();
+//        
+//        $volume = $em->getRepository('AppBundle:SkUnitVolume')->find(1);
+//        
+//        
+//        
+//        
+//        dump($volume->getTranslations());
+//        
+//        foreach ($volume->getTranslations() as $key => $value) {
+//            echo $key ." - ".$value;
+//        }
+        
 
         return $this->render('AppBundle:VbaWork:new.html.twig', array(
             'entity' => $entity,

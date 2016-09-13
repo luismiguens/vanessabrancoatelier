@@ -6,6 +6,13 @@
     </id>
     <field name="project" type="string" column="project" length="45" nullable="true"/>
     <field name="createdAt" type="datetime" column="created_at" nullable="true"/>
+    
+            <field name="image" type="string" column="image" length="255" nullable="true">
+            <options>
+                <option name="fixed"/>
+            </options>
+        </field>
+    
     <many-to-many field="type" target-entity="VbaType" inversed-by="work">
       <join-table name="vba_work_type">
         <join-columns>

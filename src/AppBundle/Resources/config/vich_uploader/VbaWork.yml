@@ -1,0 +1,5 @@
+AppBundle\Entity\VbaWork:
+    imageFile:
+        mapping:           work_image
+        filename_property: image
+

@@ -3,12 +3,16 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Knp\DoctrineBehaviors\Model as ORMBehaviors;
 
 /**
  * VbaType
  */
 class VbaType
 {
+    
+    use ORMBehaviors\Translatable\Translatable;
+    
     /**
      * @var integer
      */
@@ -69,4 +73,17 @@ class VbaType
     {
         return $this->work;
     }
+    
+    
+//    public function getName() {
+//        return $this->__toString();
+//    }
+    
+     public function __toString() {
+         
+        // dump($this->translate()->getName());
+        return $this->translate()->getName();
+         //return "bla";
+    }
+    
 }

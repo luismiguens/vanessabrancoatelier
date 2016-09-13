@@ -6,7 +6,7 @@
     {% include 'AppBundle:Default:home.html.twig' %}
     {% include 'AppBundle:Default:about.html.twig' %}
     {% include 'AppBundle:Default:services.html.twig' %}
-    {% include 'AppBundle:Default:works.html.twig' %}
+    {% include 'AppBundle:Default:works.html.twig' with {'works': works, 'types':types } %}
     {% include 'AppBundle:Default:resume.html.twig' %}
     {#{% include 'AppBundle:Default:team.html.twig' %}
     {% include 'AppBundle:Default:team-about.html.twig' %}#}

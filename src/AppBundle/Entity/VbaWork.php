@@ -3,6 +3,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\File;
 
 /**
  * VbaWork
@@ -29,6 +30,17 @@ class VbaWork
      */
     private $type;
 
+    
+    
+        /**
+     * @var string
+     */
+    //nome da imagem
+    private $image;
+    private $imageFile;
+    
+    
+    
     /**
      * Constructor
      */
@@ -37,6 +49,74 @@ class VbaWork
         $this->type = new \Doctrine\Common\Collections\ArrayCollection();
     }
 
+    
+        /**
+     * If manually uploading a file (i.e. not using Symfony Form) ensure an instance
+     * of 'UploadedFile' is injected into this setter to trigger the  update. If this
+     * bundle's configuration parameter 'inject_on_load' is set to 'true' this setter
+     * must be able to accept an instance of 'File' as the bundle will inject one here
+     * during Doctrine hydration.
+     *
+     * @param File|\Symfony\Component\HttpFoundation\File\UploadedFile $image
+     */
+    public function setImageFile(File $image = null) {
+        $this->imageFile = $image;
+
+        if ($image) {
+            $this->updatedAt = new \DateTime('now');
+        }
+    }
+
+    /**
+     * @return File
+     */
+    public function getImageFile() {
+        return $this->imageFile;
+    }
+    
+    
+        /**
+     * Set image
+     *
+     * @param string $image
+     *
+     * @return SkIdentificationModule
+     */
+    public function setImage($image) {
+        $this->image = $image;
+
+        return $this;
+    }
+
+    /**
+     * Get image
+     *
+     * @return string
+     */
+    public function getImage() {
+        return $this->image;
+    }
+    
+        public function getAbsolutePath() {
+        return null === $this->image ? null : $this->getUploadRootDir() . '/' . $this->image;
+    }
+
+    public function getWebPath() {
+        return null === $this->image ? null : $this->getUploadDir() . '/' . $this->image;
+    }
+
+    protected function getUploadRootDir() {
+        // the absolute directory path where uploaded
+        // documents should be saved
+        return __DIR__ . '/../../../../web/' . $this->getUploadDir();
+    }
+
+    protected function getUploadDir() {
+        // get rid of the __DIR__ so it doesn't screw up
+        // when displaying uploaded doc/image in the view.
+        return 'uploads/works';
+    }
+    
     /**
      * Set project
      *

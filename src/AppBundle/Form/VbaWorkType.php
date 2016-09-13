@@ -16,8 +16,14 @@ class VbaWorkType extends AbstractType
     {
         $builder
             ->add('project')
-            ->add('createdAt')
+//            ->add('createdAt')
             ->add('type')
+                ->add('imageFile', 'vich_image', array(
+                'label' => 'label.file',
+                'required'      => false,
+                'allow_delete'  => false, // not mandatory, default is true
+                'download_link' => false, // not mandatory, default is true
+                )) 
         ;
     }
     
