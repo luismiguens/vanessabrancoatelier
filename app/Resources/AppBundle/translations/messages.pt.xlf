@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
+  <file source-language="en" target-language="pt" datatype="plaintext" original="file.ext">
     <body>
       <trans-unit id="15cd9b02075b5e2d290c781c87e01edc" resname="clients_trusted_clients">
         <source>clients_trusted_clients</source>
@@ -16,23 +16,23 @@
       </trans-unit>
       <trans-unit id="9e66e6bd4069124578736528a0432752" resname="About Us">
         <source>About Us</source>
-        <target>ABOUT</target>
+        <target>SOBRE</target>
       </trans-unit>
       <trans-unit id="992a0f0542384f1ee5ef51b7cf4ae6c4" resname="Services">
         <source>Services</source>
-        <target>SERVICES</target>
+        <target>SERVIÇOS</target>
       </trans-unit>
       <trans-unit id="7b8af977b90a67e053ff2667a26828fe" resname="Works">
         <source>Works</source>
-        <target>PROJECTS</target>
+        <target>PROJETOS</target>
       </trans-unit>
       <trans-unit id="f1cefec9e2196c672a622347f1fbc325" resname="Resume">
         <source>Resume</source>
-        <target>RESUMÉ</target>
+        <target>CURRICULUM</target>
       </trans-unit>
       <trans-unit id="bbaff12800505b22a853e8b7f4eb6a22" resname="Contact">
         <source>Contact</source>
-        <target>CONTACT</target>
+        <target>CONTACTO</target>
       </trans-unit>
       <trans-unit id="e851a82d784416d6371eb21e2d4d4ec6" resname="about_name">
         <source>about_name</source>
@@ -40,11 +40,11 @@
       </trans-unit>
       <trans-unit id="99e93b77396dc8ef05187b68fe74ca45" resname="about_intro">
         <source>about_intro</source>
-        <target>I was born to create. I knew it from an early age. My ideas and projects materialize from pencils, brushes and a computer and I know that above all, those who look me up find creativity, know-how and dedication.</target>
+        <target>Nasci para criar. Desde cedo que o soube. Materializo as minhas ideias e projetos com lápis, pincéis e computador e sei que acima de tudo, quem me procura, encontra criatividade, experiência e dedicação.</target>
       </trans-unit>
       <trans-unit id="629dce33d4800fc3c4a59972ba94d578" resname="about_skills_01">
         <source>about_skills_01</source>
-        <target>Creativity</target>
+        <target>Criatividade</target>
       </trans-unit>
       <trans-unit id="63b7aa0de363fe4dad986df325d9ec82" resname="about_skills_02">
         <source>about_skills_02</source>
@@ -52,23 +52,23 @@
       </trans-unit>
       <trans-unit id="03b2d0dc1fed87cb687756e36f965192" resname="about_skills_03">
         <source>about_skills_03</source>
-        <target>Illustration and Painting</target>
+        <target>Ilustração e Pintura</target>
       </trans-unit>
       <trans-unit id="71c1545959671c79e5c104be25c57d56" resname="about_skills_04">
         <source>about_skills_04</source>
-        <target>Software skills</target>
+        <target>Prática de software</target>
       </trans-unit>
       <trans-unit id="71c1545959671c79e5c104be25c57d57" resname="about_skills_05">
         <source>about_skills_05</source>
-        <target>Client support</target>
+        <target>Suporte ao cliente</target>
       </trans-unit>
       <trans-unit id="e67baf614c3c8b95f291f267aa12648b" resname="home_i_am_name">
         <source>home_i_am_name</source>
-        <target>I'm <![CDATA[<mark>Vanessa</mark>]]> Branco</target>
+        <target>Sou <mark>Vanessa</mark> Branco</target>
       </trans-unit>
       <trans-unit id="f1c63d76c52dac62d759e975f18c3580" resname="home_intro">
         <source>home_intro</source>
-        <target>creative by nature</target>
+        <target>criativa por natureza</target>
       </trans-unit>
       <trans-unit id="c061342b830460b0a263960e44c4ba83" resname="works_our">
         <source>works_our</source>
@@ -116,75 +116,75 @@
       </trans-unit>
       <trans-unit id="cf50d619097ca83c623e3ec9e9101c36" resname="services_title">
         <source>services_title</source>
-        <target>SERVICES</target>
+        <target>SERVIÇOS</target>
       </trans-unit>
       <trans-unit id="95af578fe6413ad7ad44f5ec56137b49" resname="services_intro">
         <source>services_intro</source>
-        <target>Everything I have to offer and help you with. So you can focus in other matters.</target>
+        <target>Tudo aquilo que lhe posso oferecer e fazer por si. Assim, pode dedicar-se a outros assuntos.</target>
       </trans-unit>
       <trans-unit id="b2a9f0bad83d2ec0b5de2aae77e8ae98" resname="services_01_title">
         <source>services_01_title</source>
-        <target>GRAPHIC AND INDUSTRIAL DESIGN</target>
+        <target>DESIGN GRÁFICO E INDUSTRIAL</target>
       </trans-unit>
       <trans-unit id="edd4024e8d1bfcfd871c1b4187659eb0" resname="services_01_intro">
         <source>services_01_intro</source>
-        <target>Logotypes, stationary, posters, flyers, brochures. Books and manuals pagination. Image editing and photo albums. Outdoor publicity, vynil aplication for vehicles and store showcase. Furniture. Exhibition stands and equipment. </target> 
+        <target>Criação de logótipos, estacionário. Cartazes, folhetos, brochuras. Paginação de livros, manuais. Álbuns fotográficos e tratamento de imagem. Publicidade de exterior, decoração de veículos e montras. Mobiliário. Expositores para feiras. </target>
       </trans-unit>
       <trans-unit id="4791db7a77f873725e3abbed5a9dda44" resname="services_02_title">
         <source>services_02_title</source>
-        <target>ILLUSTRATION</target>
+        <target>ILUSTRAÇÃO</target>
       </trans-unit>
       <trans-unit id="bf0ea09aa952ecf9490cb2530e430d92" resname="services_02_intro">
         <source>services_02_intro</source>
-        <target>Children’s and juvenile illustration, didatic, technical, comercial and advertising, infographics, storyboards and characters. Albums, guest books and invitations. Custom-made illustration.</target>
+        <target>Ilustração infanto-juvenil, didática, técnica, comercial e publicitária, infografias, storyboards e  personagens. Álbuns, livros de honra e convites. Ilustração personalizada.</target>
       </trans-unit>
       <trans-unit id="adabfc0d6677c30690567d9bbef75fea" resname="services_03_title">
         <source>services_03_title</source>
-        <target>PAINTING</target>
+        <target>PINTURA</target>
       </trans-unit>
       <trans-unit id="7b47163bff2c5a40b022921af47ae419" resname="services_03_intro">
         <source>services_03_intro</source>
-        <target>Portraits and other themes. Mural painting.</target>
+        <target>Retrato e outros temas. Pintura mural.</target>
       </trans-unit>
       <trans-unit id="23301a00e8740a74fe25b126587f7098" resname="services_04_title">
         <source>services_04_title</source>
-        <target>MONITORING</target>
+        <target>MONITORIZAÇÃO / SUPERVISÃO</target>
       </trans-unit>
       <trans-unit id="9c00e1ccbcecaee836aa691df1130fa5" resname="services_04_intro">
         <source>services_04_intro</source>
-        <target>Project monitoring through the offset and digital printing process, merchandising and product or equipment manufacture.</target>
+        <target>Acompanhamento do projeto durante a produção offset ou digital, merchandising e produtos ou equipamentos.</target>
       </trans-unit>
       <trans-unit id="122ae0078b0ed82af46e3a1fbb2c20fd" resname="services_05_title">
-        <source>services_05_title</source>
-        <target>PARTNERSHIPS</target>
+        <source>PARCERIAS</source>
+        <target>Audiovisuais, fotografia, desenvolvimento web e aplicações móveis.</target>
       </trans-unit>
       <trans-unit id="d1e52117299a40dd3a28a80d980678bb" resname="services_05_intro">
         <source>services_05_intro</source>
-        <target>Audiovisual, photography, web development  and mobile apps.</target>
+        <target>Audiovisuais, fotografia, desenvolvimento web e aplicações móveis.</target>
       </trans-unit>
       <trans-unit id="2c7789f101995606f1d49756f193b4ee" resname="services_06_title">
         <source>services_06_title</source>
-        <target>TRAINING</target>
+        <target>FORMAÇÃO</target>
       </trans-unit>
       <trans-unit id="82aa36e3da70deeb969be4a3e636aa6e" resname="services_06_intro">
         <source>services_06_intro</source>
-        <target>Drawing, painting and creativity classes for children and adults.</target>
+        <target>Aulas de desenho, pintura e criatividade para crianças e adultos.</target>
       </trans-unit>
       <trans-unit id="c0e9c62cab85b5d88808f46cc4ee01a3" resname="resume_title">
         <source>resume_title</source>
-        <target>MY RESUME</target>
+        <target>O MEU CURRICULUM</target>
       </trans-unit>
       <trans-unit id="6690108d3168e9b24370f7243d6c19d3" resname="resume_intro">
         <source>resume_intro</source>
-        <target>My path. My education and professional experience.</target>
+        <target>O meu percurso. A minha formação e experiência profissional.</target>
       </trans-unit>
       <trans-unit id="cab2c7b8488eab0ac40ac43e4e87f895" resname="education_title">
         <source>education_title</source>
-        <target>Education</target>
+        <target>Formação</target>
       </trans-unit>
       <trans-unit id="759e9178ee585f3c1049646e0bacee72" resname="education_intro_01">
         <source>education_intro_01</source>
-        <target>This is my superior education path. Besides these degrees, I continuously attend several short-term technical courses which have improved my assets on attending to my clients needs.</target>
+        <target>Esta é a minha formação académica superior. Para além desta, faço questão de frequentar continuamente, diversas formações técnicas de curta duração, que se têm revelado fundamentais na resposta às exigências dos meus clientes.</target>
       </trans-unit>
       <trans-unit id="626488a6ce316dbfea35f312b525e46f" resname="education_intro_02">
         <source>education_intro_02</source>
@@ -196,7 +196,7 @@
       </trans-unit>
       <trans-unit id="c443279cd3119c26b26178809d677931" resname="education_degree_place_and_data_01">
         <source>education_degree_place_and_data_01</source>
-        <target>Post-Graduation, Comunicação e Imagem, 2001 - 2002</target>
+        <target>Pós Graduação, Comunicação e Imagem, 2001 - 2002</target>
       </trans-unit>
       <trans-unit id="fbe8a115c1b4864d4f41e1e6f8ffcedf" resname="education_degree_status_01">
         <source>education_degree_status_01</source>
@@ -208,11 +208,11 @@
       </trans-unit>
       <trans-unit id="b2bb442082fc2b4b2d47e8552dd116f9" resname="education_degree_title_02">
         <source>education_degree_title_02</source>
-        <target>Lusíada University of lisbon</target>
+        <target>Universidade Lusíada de Lisboa</target>
       </trans-unit>
       <trans-unit id="c6e303ae31f1519a6ae00314f86a8846" resname="education_degree_place_and_data_02">
         <source>education_degree_place_and_data_02</source>
-        <target>Industrial Design, 1995 - 2000</target>
+        <target>Design Industrial, 1995 - 2000</target>
       </trans-unit>
       <trans-unit id="7c1700265fb6b06fbfe906cf6f9dc59a" resname="education_degree_status_02">
         <source>education_degree_status_02</source>
@@ -224,44 +224,49 @@
       </trans-unit>
       <trans-unit id="d1a8621109cb7f53c56bc350162770d9" resname="experience_title">
         <source>experience_title</source>
-        <target>Work experience</target>
+        <target>Experiência profissional</target>
       </trans-unit>
       <trans-unit id="c813dce2312892ffed7ba6415c5e190c" resname="experience_intro_01">
         <source>experience_intro_01</source>
-        <target>I’m a freelance designer and illustrator. I started as an industrial designer in glass prodution, both semi-automatic and handmade glass at Marinha Grande. Later, working in the polimer industry, I’ve designed some merchandising products and stands projects for exhibitions and supermakets.</target>
+        <target>Sou uma designer e ilustradora freelancer. Comecei como designer industrial em produção vidreira semi-automatizada e manual e posteriormente, já na área dos polímeros, desenvolvi projetos de merchandising e  expositores para stands de feiras e supermercados. </target>
       </trans-unit>
       <trans-unit id="7646097c64196e959b294c78bde2a735" resname="experience_intro_02">
         <source>experience_intro_02</source>
-        <target>Over the last few years I've been working in print production, both offset and digital, as a graphic designer. This led me to some illustration jobs that inspired me to continue working as an illustrator. Since then, I’ve been investing more and more on this area, through the creation of small editions and customized illustrations. </target>
+        <target>Nos últimos anos trabalhei, como designer gráfica, em produção offset e digital. Isto levou-me a fazer alguns trabalhos de ilustração, que me inspiraram a continuar como ilustradora. Desde então, tenho investido cada vez mais nesta área, através da criação de pequenas edições e ilustrações personalizadas. </target>
       </trans-unit>
       
-      <trans-unit id="398caf0c5e13dbe1b52q7cea377d9185b" resname="experience_work_01">
+      
+      
+      
+      
+
+      <trans-unit id="398caf0c5e13dbe1b527cea3d77d9185b" resname="experience_work_01">
         <source>experience_work_01</source>
-        <target>Freelancer designer and illustrator</target>
+        <target>Designer e Ilustradora Freelancer </target>
       </trans-unit>
-      <trans-unit id="77a89b43582520f8eee5qc35eafea9255" resname="experience_work_place_and_data_01">
+      <trans-unit id="77a89b43582520f8eee5c3f5eafea9255" resname="experience_work_place_and_data_01">
         <source>experience_work_place_and_data_01</source>
-        <target>Since Apr 2015</target>
+        <target>Desde Abr 2015</target>
       </trans-unit>
-      <trans-unit id="3e45eaa3b3954a0bqdaa913e7d41d695c" resname="experience_work_time_01">
+      <trans-unit id="3e45eaa3b3954a0fbdaa913e7d41d695c" resname="experience_work_time_01">
         <source>experience_work_time_01</source>
         <target>__experience_work_time_01</target>
       </trans-unit>
-      <trans-unit id="6b6546abe68e6eqc470978d201c71b6b2" resname="experience_work_description_02">
+      <trans-unit id="6b6546abe68e6fec470978d201c71b6b2" resname="experience_work_description_02">
         <source>experience_work_description_01</source>
         <target>__experience_work_description_01</target>
       </trans-unit>
       
       
-      <trans-unit id="761207b665584wb452161b4b87c23e05f" resname="experience_work_02">
+      <trans-unit id="761207b665584bf452161b4b87c23e05f" resname="experience_work_02">
         <source>experience_work_02</source>
-        <target>Graphic designer / Pre press operator </target>
+        <target>Designer Gráfica / Operadora de pré-impressão  </target>
       </trans-unit>
-      <trans-unit id="896ceb24152f9wcbab61eb3c646de0b21" resname="experience_work_place_and_data_02">
+      <trans-unit id="896ceb2415f2f9cbab61eb3c646de0b21" resname="experience_work_place_and_data_02">
         <source>experience_work_place_and_data_02</source>
-        <target>Nova Gráfica, Lda. / Jan 2005 - Apr 2015</target>
+        <target>Nova Gráfica, Lda. / Jan 2005 - Abr 2015</target>
       </trans-unit>
-      <trans-unit id="2e1362b91fcwea72b5bfa21fa9bee1ec3" resname="experience_work_time_02">
+      <trans-unit id="2e1362b91fcea72bf5bfa21fa9bee1ec3" resname="experience_work_time_02">
         <source>experience_work_time_02</source>
         <target>__experience_work_time_02</target>
       </trans-unit>
@@ -269,19 +274,19 @@
       
       
       
-       <trans-unit id="398caf0cw5e13dbe1b527cea377d9185b" resname="experience_work_03">
+       <trans-unit id="398caf0cf5e13dbe1b527cea377d9185b" resname="experience_work_03">
         <source>experience_work_03</source>
-        <target>Production assistant</target>
+        <target>Assistente de Produção</target>
       </trans-unit>
-      <trans-unit id="77a89b43d582520f8eee5c35eafea9255" resname="experience_work_place_and_data_03">
+      <trans-unit id="77a89b43f582520f8eee5c35eafea9255" resname="experience_work_place_and_data_03">
         <source>experience_work_place_and_data_03</source>
-        <target>Iris Audio Visuais Lda. / Aug 2004 - Dec 2004</target>
+        <target>Iris Audio Visuais Lda. / Ago 2004 - Dez 2004</target>
       </trans-unit>
-      <trans-unit id="3e45eaa3b39d54a0bdaa913e7d41d695c" resname="experience_work_time_03">
+      <trans-unit id="3e45eaa3b3954a0bdaa913fe7d41d695c" resname="experience_work_time_03">
         <source>experience_work_time_03</source>
         <target>__experience_work_time_01</target>
       </trans-unit>
-      <trans-unit id="6b6546abe68de6ec470978d201c71b6b2" resname="experience_work_description_03">
+      <trans-unit id="6b6546abe68e6ecf470978d201c71b6b2" resname="experience_work_description_03">
         <source>experience_work_description_03</source>
         <target>__experience_work_description_01</target>
       </trans-unit>
@@ -289,93 +294,95 @@
       
       
       
-       <trans-unit id="398caf0c5e13fdbe1b527cea377d9185b" resname="experience_work_04">
+       <trans-unit id="398caf0c5e13dfbe1b527cea377d9185b" resname="experience_work_04">
         <source>experience_work_04</source>
-        <target>Industrial Designer</target>
+        <target>Designer Industrial</target>
       </trans-unit>
-      <trans-unit id="77a89b43582520ff8eee5c35eafea9255" resname="experience_work_place_and_data_04">
+      <trans-unit id="77a89b4358252d0f8eee5c35eafea9255" resname="experience_work_place_and_data_04">
         <source>experience_work_place_and_data_04</source>
-        <target>Plasterm, Plásticos Termoformados, Lda. / Jun 2003 - Jan 2004 </target>
+        <target>Plasterm, Plásticos Termoformados, Lda. / Jun 2003 - Jan 2004</target>
       </trans-unit>
-      <trans-unit id="3e45eaa3b3954a0bdafa913e7d41d695c" resname="experience_work_time_04">
+      <trans-unit id="3e45eaa3b3954da0bdaa913e7d41d695c" resname="experience_work_time_04">
         <source>experience_work_time_04</source>
         <target>__experience_work_time_01</target>
       </trans-unit>
-      <trans-unit id="6b6546abe68e6ec4d70978d201c71b6b2" resname="experience_work_description_04">
+      <trans-unit id="6b6546abe68e6ec4709d78d201c71b6b2" resname="experience_work_description_04">
         <source>experience_work_description_04</source>
         <target>__experience_work_description_01</target>
       </trans-unit>
       
        <trans-unit id="398caf0c5e13dbe1db527cea377d9185b" resname="experience_work_05">
         <source>experience_work_05</source>
-        <target>Industrial Designer</target>
+        <target>Designer Industrial </target>
       </trans-unit>
-      <trans-unit id="77a89b43582520f8eede5c35eafea9255" resname="experience_work_place_and_data_05">
+      <trans-unit id="77a89b43582d520f8eee5c35eafea9255" resname="experience_work_place_and_data_05">
         <source>experience_work_place_and_data_05</source>
-        <target>In-Fusão - Transformação de Vidro Lda. / Sep de 2001 - 2002</target>
+        <target>In-Fusão - Transformação de Vidro Lda. / Set de 2001 - 2002</target>
       </trans-unit>
-      <trans-unit id="3e45eaa3b3954a0bdsaa913e7d41d695c" resname="experience_work_time_05">
+      <trans-unit id="3e45eaa3b3954a0dbdaa913e7d41d695c" resname="experience_work_time_05">
         <source>experience_work_time_05</source>
         <target>__experience_work_time_05</target>
       </trans-unit>
-      <trans-unit id="6b6546abe68e6ec47097s8d201c71b6b2" resname="experience_work_description_05">
+      <trans-unit id="6b6546abe68edec470978d201c71b6b2" resname="experience_work_description_05">
         <source>experience_work_description_05</source>
         <target>__experience_work_description_01</target>
       </trans-unit>
       
-       <trans-unit id="398caf0c5e13dbe1b527cefa377d9185b" resname="experience_work_06">
+       <trans-unit id="398caf0c5e13dbe1b527cdea377d9185b" resname="experience_work_06">
         <source>experience_work_06</source>
-        <target>Graphic Designer</target>
+        <target>Designer Gráfica</target>
       </trans-unit>
-      <trans-unit id="77a89b43582520f8eee5c35geafea9255" resname="experience_work_place_and_data_06">
+      <trans-unit id="77a89b4358252d0f8eee5c35eafea9255" resname="experience_work_place_and_data_06">
         <source>experience_work_place_and_data_06</source>
-        <target>Região de Turismo Leiria/Fátima / Sep 2001 - 2002</target>
+        <target>Região de Turismo Leiria/Fátima / Set 2001 - 2002 </target>
       </trans-unit>
-      <trans-unit id="3e45eaa3b3954a0bdaa9g13e7d41d695c" resname="experience_work_time_06">
+      <trans-unit id="3e45easa3b3954a0bdaa913e7d41d695c" resname="experience_work_time_06">
         <source>experience_work_time_06</source>
         <target>__experience_work_time_01</target>
       </trans-unit>
-      <trans-unit id="6b6546abe68e6ec47g0978d201c71b6b2" resname="experience_work_description_06">
+      <trans-unit id="6b6546abe68se6ec470978d201c71b6b2" resname="experience_work_description_06">
         <source>experience_work_description_06</source>
         <target>__experience_work_description_01</target>
       </trans-unit>
       
       
-      <trans-unit id="3f280a29d84ce00g66982b7b4622514af" resname="testimonials_what_they_say">
+      
+      
+      
+      
+      
+      <trans-unit id="3f280a29d84ce0066982b7b4622514af" resname="testimonials_what_they_say">
         <source>testimonials_what_they_say</source>
-        <target>WHAT THEY SAY</target>
+        <target>O QUE DIZEM</target>
       </trans-unit>
-      <trans-unit id="ee35a2df0629ad43g326dac225f3faede" resname="testimonials_intro_01">
+      <trans-unit id="ee35a2df0629ad43326dac225f3faede" resname="testimonials_intro_01">
         <source>testimonials_intro_01</source>
-        <target>I see her art as an extension of her. I can’t separate them. (...) everything she creates for me, turns into an imediate perception of my wishes. (...) I supose that’s not easy to find such a professional with whom we can achieve that symbiosis. I am that lucky!</target>
+        <target>Eu vejo a sua arte como uma extensão da Vanessa. Não consigo separá-las. Para meu regozijo, todo o trabalho que ela cria para mim, resulta de uma percepção imediata do que eu desejo. (...) Suponho que não seja fácil encontrar uma profissional com quem se consiga esta simbiose. Eu tenho essa sorte!</target>
       </trans-unit>
       <trans-unit id="a6274e222bf640393c4e5dc9ce23c49c" resname="testimonials_name_and_position_01">
         <source>testimonials_name_and_position_01</source>
-        <target>Ivone Sousa / Therapist</target>
+        <target>Ivone Sousa / Terapeuta</target>
       </trans-unit>
       <trans-unit id="752a87399debcfc22b57639ac02ee1ba" resname="testimonials_intro_02">
         <source>testimonials_intro_02</source>
-        <target>(...) we’re very satisfied with Vanessa’s work.</target>
+        <target> (…) estamos muito satisfeitos com o trabalho feito para esta empresa pela Vanessa.</target>
       </trans-unit>
       <trans-unit id="2a53df224c2ae6db30ba25d4e7d4692b" resname="testimonials_name_and_position_02">
         <source>testimonials_name_and_position_02</source>
-        <target>António Medeiros Cordeiro, Soc. Unip. Lda.
-</target>
+        <target>António Medeiros Cordeiro, Soc. Unip. Lda.</target>
       </trans-unit>
       <trans-unit id="a62b431cd543c14272f9223494d619bf" resname="testimonials_intro_03">
         <source>testimonials_intro_03</source>
-        <target>Unusually gifted and a true artist! Vanessa has an amazing ability to achieve what you want. She is dedicated, intelligent, sensitive, creative and with a natural gift in story telling through illustrations! She get's "into your shoes", to obtain the best result and what feels right for you. Vanessa is flexible, responsive and a hard worker! An absolute asset every time I hire her!</target>
+        <target>Incomumente dotada e uma verdadeira artista! A Vanessa tem a capacidade incrível de conseguir aquilo que você deseja. Ela é dedicada, inteligente, sensível, criativa e com o dom natural para a narrativa através da ilustração! Ela “põe-se nos seus sapatos”, para conseguir o melhor resultado e aquilo que se adapta a si. A Vanessa é flexivel, responsiva e trabalhadora esforçada! Uma absoluta mais valia sempre que a contrato!</target>
       </trans-unit>
       <trans-unit id="e7cd17e66741b122924eb14ae30157e3" resname="testimonials_name_and_position_03">
         <source>testimonials_name_and_position_03</source>
         <target>Emilie Smith, Lava Design</target>
       </trans-unit>
       
-      
-      
       <trans-unit id="a62b431cd543c14272f92243494d619bf" resname="testimonials_intro_04">
         <source>testimonials_intro_04</source>
-        <target>Creative, professional, committed and 100% client dedicated designer.</target>
+        <target>Designer criativa, profissional, empenhada e 100% dedicada ao seu cliente.</target>
       </trans-unit>
       <trans-unit id="e7cd17e66741b1224924eb14ae30157e3" resname="testimonials_name_and_position_04">
         <source>testimonials_name_and_position_04</source>
@@ -384,12 +391,13 @@
       
       <trans-unit id="a62b431cd543c154272f9223494d619bf" resname="testimonials_intro_05">
         <source>testimonials_intro_05</source>
-        <target>Creative and professional, we know that with Vanessa, the result will always be surprising.</target>
+        <target>Criativa e profissional, com a Vanessa sabemos que podemos contar com um resultado sempre surpreendente.</target>
       </trans-unit>
       <trans-unit id="e7cd17e667541b122924eb14ae30157e3" resname="testimonials_name_and_position_05">
         <source>testimonials_name_and_position_05</source>
         <target>Dr.ª Raquel Candelária Guimarães</target>
       </trans-unit>
+      
       
     </body>
   </file>
