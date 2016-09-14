@@ -64,7 +64,7 @@
       </trans-unit>
       <trans-unit id="e67baf614c3c8b95f291f267aa12648b" resname="home_i_am_name">
         <source>home_i_am_name</source>
-        <target>Sou <mark>Vanessa</mark> Branco</target>
+        <target>Sou <![CDATA[<mark>Vanessa</mark>]]> Branco</target>
       </trans-unit>
       <trans-unit id="f1c63d76c52dac62d759e975f18c3580" resname="home_intro">
         <source>home_intro</source>
@@ -298,7 +298,7 @@
         <source>experience_work_04</source>
         <target>Designer Industrial</target>
       </trans-unit>
-      <trans-unit id="77a89b4358252d0f8eee5c35eafea9255" resname="experience_work_place_and_data_04">
+      <trans-unit id="77a89b43582452d0f8eee5c35eafea9255" resname="experience_work_place_and_data_04">
         <source>experience_work_place_and_data_04</source>
         <target>Plasterm, Plásticos Termoformados, Lda. / Jun 2003 - Jan 2004</target>
       </trans-unit>
@@ -332,7 +332,7 @@
         <source>experience_work_06</source>
         <target>Designer Gráfica</target>
       </trans-unit>
-      <trans-unit id="77a89b4358252d0f8eee5c35eafea9255" resname="experience_work_place_and_data_06">
+      <trans-unit id="77a89b4358252d0f84eee5c35eafea9255" resname="experience_work_place_and_data_06">
         <source>experience_work_place_and_data_06</source>
         <target>Região de Turismo Leiria/Fátima / Set 2001 - 2002 </target>
       </trans-unit>
