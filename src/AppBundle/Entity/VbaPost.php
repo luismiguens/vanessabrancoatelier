@@ -1,19 +1,26 @@
 <?php
 
 namespace AppBundle\Entity;
-
-use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\HttpFoundation\File\File;
 
 /**
- * VbaWork
+ * VbaPost
  */
-class VbaWork {
+class VbaPost
+{
+    /**
+     * @var string
+     */
+    private $title;
 
     /**
      * @var string
      */
-    private $project;
+    private $author;
+
+    //nome da imagem
+    private $image;
+    private $imageFile;
 
     /**
      * @var \DateTime
@@ -21,27 +28,62 @@ class VbaWork {
     private $createdAt;
 
     /**
+     * @var string
+     */
+    private $text;
+
+    /**
      * @var integer
      */
     private $id;
 
-    /**
-     * @var \Doctrine\Common\Collections\Collection
-     */
-    private $type;
 
     /**
-     * @var string
+     * Set title
+     *
+     * @param string $title
+     *
+     * @return VbaPost
      */
-    //nome da imagem
-    private $image;
-    private $imageFile;
+    public function setTitle($title)
+    {
+        $this->title = $title;
+
+        return $this;
+    }
 
     /**
-     * Constructor
+     * Get title
+     *
+     * @return string
      */
-    public function __construct() {
-        $this->type = new \Doctrine\Common\Collections\ArrayCollection();
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+    /**
+     * Set author
+     *
+     * @param string $author
+     *
+     * @return VbaPost
+     */
+    public function setAuthor($author)
+    {
+        $this->author = $author;
+
+        return $this;
+    }
+
+    /**
+     * Get author
+     *
+     * @return string
+     */
+    public function getAuthor()
+    {
+        return $this->author;
     }
 
     /**
@@ -107,37 +149,18 @@ class VbaWork {
     protected function getUploadDir() {
         // get rid of the __DIR__ so it doesn't screw up
         // when displaying uploaded doc/image in the view.
-        return 'uploads/works';
-    }
-
-    /**
-     * Set project
-     *
-     * @param string $project
-     * @return VbaWork
-     */
-    public function setProject($project) {
-        $this->project = $project;
-
-        return $this;
-    }
-
-    /**
-     * Get project
-     *
-     * @return string 
-     */
-    public function getProject() {
-        return $this->project;
+        return 'uploads/posts';
     }
 
     /**
      * Set createdAt
      *
      * @param \DateTime $createdAt
-     * @return VbaWork
+     *
+     * @return VbaPost
      */
-    public function setCreatedAt($createdAt) {
+    public function setCreatedAt($createdAt)
+    {
         $this->createdAt = $createdAt;
 
         return $this;
@@ -146,49 +169,45 @@ class VbaWork {
     /**
      * Get createdAt
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
-    public function getCreatedAt() {
+    public function getCreatedAt()
+    {
         return $this->createdAt;
     }
 
     /**
-     * Get id
+     * Set text
      *
-     * @return integer 
-     */
-    public function getId() {
-        return $this->id;
-    }
-
-    /**
-     * Add type
+     * @param string $text
      *
-     * @param \AppBundle\Entity\VbaType $type
-     * @return VbaWork
+     * @return VbaPost
      */
-    public function addType(\AppBundle\Entity\VbaType $type) {
-        $this->type[] = $type;
+    public function setText($text)
+    {
+        $this->text = $text;
 
         return $this;
     }
 
     /**
-     * Remove type
+     * Get text
      *
-     * @param \AppBundle\Entity\VbaType $type
+     * @return string
      */
-    public function removeType(\AppBundle\Entity\VbaType $type) {
-        $this->type->removeElement($type);
+    public function getText()
+    {
+        return $this->text;
     }
 
     /**
-     * Get type
+     * Get id
      *
-     * @return \Doctrine\Common\Collections\Collection 
+     * @return integer
      */
-    public function getType() {
-        return $this->type;
+    public function getId()
+    {
+        return $this->id;
     }
-
 }
+

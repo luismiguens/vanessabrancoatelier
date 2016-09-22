@@ -6,7 +6,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
-class VbaWorkType extends AbstractType {
+class VbaPostType extends AbstractType {
 
     /**
      * @param FormBuilderInterface $builder
@@ -14,9 +14,10 @@ class VbaWorkType extends AbstractType {
      */
     public function buildForm(FormBuilderInterface $builder, array $options) {
         $builder
-                ->add('project')
+                ->add('title')
+                ->add('author')
                 ->add('createdAt')
-                ->add('type')
+                ->add('text') 
                 ->add('imageFile', 'vich_image', array(
                     'label' => '',
                     'required' => false,
@@ -31,7 +32,7 @@ class VbaWorkType extends AbstractType {
      */
     public function setDefaultOptions(OptionsResolverInterface $resolver) {
         $resolver->setDefaults(array(
-            'data_class' => 'AppBundle\Entity\VbaWork'
+            'data_class' => 'AppBundle\Entity\VbaPost'
         ));
     }
 
@@ -39,7 +40,7 @@ class VbaWorkType extends AbstractType {
      * @return string
      */
     public function getName() {
-        return 'appbundle_vbawork';
+        return 'appbundle_vbapost';
     }
 
 }

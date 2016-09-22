@@ -1,3 +1,7 @@
+app_admin_post:
+    resource: "@AppBundle/Resources/config/routing/vbapost.yml"
+    prefix:   /admin_post
+
 app_admin_work:
     resource: "@AppBundle/Resources/config/routing/vbawork.yml"
     prefix:   /admin_work
@@ -5,3 +9,7 @@ app_admin_work:
 homepage:
     path:     /
     defaults: { _controller: "AppBundle:Default:index" }
+    
+contact:
+    path:     /contact
+    defaults: { _controller: "AppBundle:Default:contact" }

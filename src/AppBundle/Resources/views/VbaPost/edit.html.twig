@@ -1,15 +1,16 @@
 {% extends 'AppBundle::forms_layout.html.twig' %}
 
 {% block body -%}
-    <h1>VbaWork creation</h1>
+    <h1>VbaPost edit</h1>
 
-    {{ form(form) }}
+    {{ form(edit_form) }}
 
         <ul class="record_actions">
     <li>
-        <a href="{{ path('admin_work') }}">
+        <a href="{{ path('admin_post') }}">
             Back to the list
         </a>
     </li>
+    <li>{{ form(delete_form) }}</li>
 </ul>
 {% endblock %}

@@ -136,7 +136,7 @@
       </trans-unit>
       <trans-unit id="bf0ea09aa952ecf9490cb2530e430d92" resname="services_02_intro">
         <source>services_02_intro</source>
-        <target>Ilustração infanto-juvenil, didática, técnica, comercial e publicitária, infografias, storyboards e  personagens. Álbuns, livros de honra e convites. Ilustração personalizada.</target>
+        <target>Infanto-juvenil, didática, técnica e publicitária, infografias, storyboards e personagens. Ilustração personaliza</target>
       </trans-unit>
       <trans-unit id="adabfc0d6677c30690567d9bbef75fea" resname="services_03_title">
         <source>services_03_title</source>
@@ -144,7 +144,7 @@
       </trans-unit>
       <trans-unit id="7b47163bff2c5a40b022921af47ae419" resname="services_03_intro">
         <source>services_03_intro</source>
-        <target>Retrato e outros temas. Pintura mural.</target>
+        <target>Retrato e outros temas em diferentes técnicas. Pintura mural.</target>
       </trans-unit>
       <trans-unit id="23301a00e8740a74fe25b126587f7098" resname="services_04_title">
         <source>services_04_title</source>
@@ -152,7 +152,7 @@
       </trans-unit>
       <trans-unit id="9c00e1ccbcecaee836aa691df1130fa5" resname="services_04_intro">
         <source>services_04_intro</source>
-        <target>Acompanhamento do projeto durante a produção offset ou digital, merchandising e produtos ou equipamentos.</target>
+        <target> Acompanhamento do projeto durante a produção gráfica e manufatura de produtos e/ou equipamentos.</target>
       </trans-unit>
       <trans-unit id="122ae0078b0ed82af46e3a1fbb2c20fd" resname="services_05_title">
         <source>PARCERIAS</source>
@@ -184,7 +184,7 @@
       </trans-unit>
       <trans-unit id="759e9178ee585f3c1049646e0bacee72" resname="education_intro_01">
         <source>education_intro_01</source>
-        <target>Esta é a minha formação académica superior. Para além desta, faço questão de frequentar continuamente, diversas formações técnicas de curta duração, que se têm revelado fundamentais na resposta às exigências dos meus clientes.</target>
+        <target>Esta é a minha formação académica superior. Para além desta, frequento continuamente, diversas formações técnicas de curta duração, que se têm revelado fundamentais na resposta às exigências dos meus clientes.</target>
       </trans-unit>
       <trans-unit id="626488a6ce316dbfea35f312b525e46f" resname="education_intro_02">
         <source>education_intro_02</source>
@@ -200,11 +200,11 @@
       </trans-unit>
       <trans-unit id="fbe8a115c1b4864d4f41e1e6f8ffcedf" resname="education_degree_status_01">
         <source>education_degree_status_01</source>
-        <target>__education_degree_status_01</target>
+        <target>Concluído</target>
       </trans-unit>
       <trans-unit id="6fe83aa182c2b6ba665b3f878fd45324" resname="education_degree_description_01">
         <source>education_degree_description_01</source>
-        <target>__education_degree_description_01</target>
+        <target>Formação intensiva, que incidiu essencialmente em estratégias de MKT e comunicação. Desde o processo criativo até à implementação da ideia e concretização de uma campanha publicitária.</target>
       </trans-unit>
       <trans-unit id="b2bb442082fc2b4b2d47e8552dd116f9" resname="education_degree_title_02">
         <source>education_degree_title_02</source>
@@ -216,11 +216,11 @@
       </trans-unit>
       <trans-unit id="7c1700265fb6b06fbfe906cf6f9dc59a" resname="education_degree_status_02">
         <source>education_degree_status_02</source>
-        <target>__education_degree_status_02</target>
+        <target>Graduada</target>
       </trans-unit>
       <trans-unit id="5efdcd36bc3999abd38274afcfb95a02" resname="education_degree_description_02">
         <source>education_degree_description_02</source>
-        <target>__education_degree_description_02</target>
+        <target>Licenciatura direcionada para a análise, desenvolvimento e prototipagem de produtos com vista à sua industrialização. Muito focada na interdisciplinaridade e no empreendedorismo.</target>
       </trans-unit>
       <trans-unit id="d1a8621109cb7f53c56bc350162770d9" resname="experience_title">
         <source>experience_title</source>
@@ -228,7 +228,7 @@
       </trans-unit>
       <trans-unit id="c813dce2312892ffed7ba6415c5e190c" resname="experience_intro_01">
         <source>experience_intro_01</source>
-        <target>Sou uma designer e ilustradora freelancer. Comecei como designer industrial em produção vidreira semi-automatizada e manual e posteriormente, já na área dos polímeros, desenvolvi projetos de merchandising e  expositores para stands de feiras e supermercados. </target>
+        <target>Sou uma designer e ilustradora freelancer. Comecei como designer industrial em produção vidreira semi-automatizada e manual e posteriormente, já na área dos polímeros, desenvolvi projetos de merchandising e  expositores para stands de feiras e superfícies comerciais. </target>
       </trans-unit>
       <trans-unit id="7646097c64196e959b294c78bde2a735" resname="experience_intro_02">
         <source>experience_intro_02</source>
@@ -252,9 +252,9 @@
         <source>experience_work_time_01</source>
         <target>__experience_work_time_01</target>
       </trans-unit>
-      <trans-unit id="6b6546abe68e6fec470978d201c71b6b2" resname="experience_work_description_02">
+      <trans-unit id="6b6546abe68e6fec470978d201c71b6b2" resname="experience_work_description_01">
         <source>experience_work_description_01</source>
-        <target>__experience_work_description_01</target>
+        <target>Trabalhadora independente.</target>
       </trans-unit>
       
       
@@ -270,7 +270,10 @@
         <source>experience_work_time_02</source>
         <target>__experience_work_time_02</target>
       </trans-unit>
-      
+       <trans-unit id="6b6546a2be68e6ecf470978d201c71b6b2" resname="experience_work_description_02">
+        <source>experience_work_description_02</source>
+        <target>Criação de diversos projetos gráficos internos e para clientes. Verificação e montagem para impressão offset e digital.</target>
+      </trans-unit>
       
       
       
@@ -288,7 +291,7 @@
       </trans-unit>
       <trans-unit id="6b6546abe68e6ecf470978d201c71b6b2" resname="experience_work_description_03">
         <source>experience_work_description_03</source>
-        <target>__experience_work_description_01</target>
+        <target>Preparação de alinhamentos publicitários para TV e produtos turísticos audiovisuais. </target>
       </trans-unit>
       
       
@@ -308,7 +311,7 @@
       </trans-unit>
       <trans-unit id="6b6546abe68e6ec4709d78d201c71b6b2" resname="experience_work_description_04">
         <source>experience_work_description_04</source>
-        <target>__experience_work_description_01</target>
+        <target>Conceção de produtos de merchandising e equipamentos para superfícies comerciais e feiras.</target>
       </trans-unit>
       
        <trans-unit id="398caf0c5e13dbe1db527cea377d9185b" resname="experience_work_05">
@@ -325,7 +328,7 @@
       </trans-unit>
       <trans-unit id="6b6546abe68edec470978d201c71b6b2" resname="experience_work_description_05">
         <source>experience_work_description_05</source>
-        <target>__experience_work_description_01</target>
+        <target>Conceção de peças em vidro para Fusing, vidro soprado artesanal ou moldado e foscagem a jato de areia.</target>
       </trans-unit>
       
        <trans-unit id="398caf0c5e13dbe1b527cdea377d9185b" resname="experience_work_06">
@@ -342,7 +345,7 @@
       </trans-unit>
       <trans-unit id="6b6546abe68se6ec470978d201c71b6b2" resname="experience_work_description_06">
         <source>experience_work_description_06</source>
-        <target>__experience_work_description_01</target>
+        <target>Responsável pela agenda mensal de eventos e promoção da instituição e imagem gráfica das exposições temporárias.</target>
       </trans-unit>
       
       
@@ -377,7 +380,7 @@
       </trans-unit>
       <trans-unit id="e7cd17e66741b122924eb14ae30157e3" resname="testimonials_name_and_position_03">
         <source>testimonials_name_and_position_03</source>
-        <target>Emilie Smith, Lava Design</target>
+        <target>Emilie Smith, Founder/Designer of Lava Design by Emilie Smith</target>
       </trans-unit>
       
       <trans-unit id="a62b431cd543c14272f92243494d619bf" resname="testimonials_intro_04">
@@ -386,7 +389,7 @@
       </trans-unit>
       <trans-unit id="e7cd17e66741b1224924eb14ae30157e3" resname="testimonials_name_and_position_04">
         <source>testimonials_name_and_position_04</source>
-        <target>Dr. Carlos Santos, Diretor de Serviços de Agricultura.</target>
+        <target>Carlos Santos, Diretor de Serviços de Agricultura.</target>
       </trans-unit>
       
       <trans-unit id="a62b431cd543c154272f9223494d619bf" resname="testimonials_intro_05">
@@ -395,7 +398,7 @@
       </trans-unit>
       <trans-unit id="e7cd17e667541b122924eb14ae30157e3" resname="testimonials_name_and_position_05">
         <source>testimonials_name_and_position_05</source>
-        <target>Dr.ª Raquel Candelária Guimarães</target>
+        <target>Raquel Candelária Guimarães, Advogada/Lawyer</target>
       </trans-unit>
       
       

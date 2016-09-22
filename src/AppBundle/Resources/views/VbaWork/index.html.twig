@@ -1,23 +1,28 @@
-{% extends '::base.html.twig' %}
+{% extends 'AppBundle::forms_layout.html.twig' %}
+
 
 {% block body -%}
     <h1>VbaWork list</h1>
 
-    <table class="records_list">
+    <table class="records_list table table-striped table-responsive table-bordered">
         <thead>
             <tr>
+                <th>Id</th>
                 <th>Project</th>
                 <th>Createdat</th>
-                <th>Id</th>
+                <th>Image</th>
                 <th>Actions</th>
             </tr>
         </thead>
         <tbody>
         {% for entity in entities %}
             <tr>
+                <td>{{ entity.id }}</td>
                 <td><a href="{{ path('admin_work_show', { 'id': entity.id }) }}">{{ entity.project }}</a></td>
                 <td>{% if entity.createdAt %}{{ entity.createdAt|date('Y-m-d H:i:s') }}{% endif %}</td>
-                <td>{{ entity.id }}</td>
+                <td><img style="max-width: 200px" class="img-responsive" src="{{ entity.getWebPath | imagine_filter('sk_downscale_max_600_600') }}" /></td>
+                
+                
                 <td>
                 <ul>
                     <li>
