@@ -155,8 +155,8 @@
         <target> Acompanhamento do projeto durante a produção gráfica e manufatura de produtos e/ou equipamentos.</target>
       </trans-unit>
       <trans-unit id="122ae0078b0ed82af46e3a1fbb2c20fd" resname="services_05_title">
-        <source>PARCERIAS</source>
-        <target>Audiovisuais, fotografia, desenvolvimento web e aplicações móveis.</target>
+        <source>services_05_title</source>
+        <target>PARCERIAS</target>
       </trans-unit>
       <trans-unit id="d1e52117299a40dd3a28a80d980678bb" resname="services_05_intro">
         <source>services_05_intro</source>
