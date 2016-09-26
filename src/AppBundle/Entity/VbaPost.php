@@ -22,6 +22,12 @@ class VbaPost
     private $image;
     private $imageFile;
 
+    
+        /**
+     * @var string
+     */
+    private $video;
+    
     /**
      * @var \DateTime
      */
@@ -86,6 +92,50 @@ class VbaPost
         return $this->author;
     }
 
+    
+    
+    
+    
+    
+    
+       /**
+     * Set video
+     *
+     * @param string $video
+     *
+     * @return VbaPost
+     */
+    public function setVideo($video)
+    {
+        $this->video = $video;
+
+        return $this;
+    }
+
+    /**
+     * Get video
+     *
+     * @return string
+     */
+    public function getVideo()
+    {
+        return $this->video;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * If manually uploading a file (i.e. not using Symfony Form) ensure an instance
      * of 'UploadedFile' is injected into this setter to trigger the  update. If this

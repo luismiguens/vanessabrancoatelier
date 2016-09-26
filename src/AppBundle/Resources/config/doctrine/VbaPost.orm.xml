@@ -19,6 +19,13 @@
         <option name="fixed"/>
       </options>
     </field>
+    
+     <field name="video" type="text" column="video" length="65535" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    
     <field name="createdAt" type="datetime" column="created_at" nullable="true"/>
     <field name="text" type="text" column="text" length="65535" nullable="true">
       <options>

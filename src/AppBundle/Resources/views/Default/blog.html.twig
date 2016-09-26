@@ -17,7 +17,16 @@
                 <div class="col-md-4 col-sm-6 blog wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
                     <span>{{post.createdAt|date("d")}}<br>{{post.createdAt|date("F")|slice(0, 3) }}</span>
                         {#<img src="img/blog/1.jpg" alt="..." class="post-img">#}
-                    <img class="post-img" src="{{ post.getWebPath | imagine_filter('sk_downscale_max_600_600') }}" />
+                   
+                    {% if (post.image|length) %}
+                        <img class="post-img" src="{{ post.getWebPath | imagine_filter('sk_downscale_max_600_600') }}" />
+                        
+                        {% else %}
+                            {{ post.video|replace({' height="315"':'', 'width="560"':'width="350"'})|raw }}
+                            {% endif %}
+                    
+                    
+                    
                     <h3><a href="#">{{post.title}}</a></h3>
                     <h4>{{post.author}} . {{post.createdAt|date("d/m/Y")}}</h4>
                     <p>{{post.text}}</p>
@@ -44,7 +53,9 @@
 
                                 {#<span>{{post.createdAt|date("d")}}<br>{{post.createdAt|date("F")|slice(0, 3) }}</span>#}
                                 {#<img src="img/blog/1.jpg" alt="..." class="post-img">#}
-                                <img class="post-img" src="{{ post.getWebPath | imagine_filter('sk_downscale_max_600_600') }}" />
+                                
+                                
+                                {#<img class="post-img" src="{{ post.getWebPath | imagine_filter('sk_downscale_max_600_600') }}" />#}
                                 <h3><a href="#">{{post.title}}</a></h3>
                                 <h4>{{post.author}} . {{post.createdAt|date("d/m/Y")}}</h4>
                                 <p>{{post.text}}</p>

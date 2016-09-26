@@ -24,6 +24,7 @@ class VbaPostType extends AbstractType {
                     'allow_delete' => false, // not mandatory, default is true
                     'download_link' => false, // not mandatory, default is true
                 ))
+                ->add('video') 
         ;
     }
 

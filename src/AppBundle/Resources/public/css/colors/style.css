@@ -74,7 +74,7 @@ li {
     list-style: outside none none;
 }
 mark {
-    background-color: #face9a;
+    background-color: #FEF7A4;
     padding: 0.1em;
 }
 .clearfix:after {
@@ -99,13 +99,13 @@ ol {
     padding: 0;
 }
 ::selection {
-    background: #face9a;
+    background: #FEF7A4;
     /* Safari */
     
     color: #333;
 }
 ::-moz-selection {
-    background: #face9a;
+    background: #FEF7A4;
     /* Firefox */
     
     color: #333;
@@ -202,8 +202,8 @@ ol {
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #face9a;
-    border-color: #face9a;
+    background-color: #FEF7A4;
+    border-color: #FEF7A4;
     color: #333;
 }
 .navbar-default .navbar-toggle:hover>.icon-bar {
@@ -301,7 +301,7 @@ ol {
     width: 520px;
 }
 #about .bio {
-    background-color: #face9a;
+    background-color: #fef7a4;
     margin-left: -100px;
     margin-top: 50px;
     padding: 14px 31px 33px 35px;
@@ -431,7 +431,7 @@ ol {
     margin-bottom: 10px;
 }
 #services .service:hover>i.icon {
-    background: #face9a;
+    background: #FEF7A4;
     color: #111;
 }
 #services h4 {
@@ -631,7 +631,7 @@ ol.type li a.active {
     margin: 0 4px 0 0;
 }
 .education .years {
-    background-color: #face9a;
+    background-color: #fef7a4;
     color: #555;
     display: inline-block;
     font-size: 14px;
@@ -908,10 +908,10 @@ ol.type li a.active {
 .owl-theme .owl-controls .owl-page.active span,
 .owl-theme .owl-controls.clickable .owl-page:hover span {
     opacity: 1;
-    background: #face9a;
+    background: #E6E600;
 }
 .owl-theme .owl-controls .owl-page.active span {
-    background: #face9a;
+    background: #FAF476;
 }
 /* 11. Section Clients
 -------------------------------------------------*/
@@ -1005,7 +1005,7 @@ ol.type li a.active {
 }
 #blog h3 a:hover {
     color: #222;
-    background-color: #face9a;
+    background-color: #fef7a4;
 }
 #blog .blog a.read-more {
     color: #999;
@@ -1119,7 +1119,7 @@ section#Contact ul {
     z-index: 99;
 }
 .go-totop {
-    background-color: #face9a;
+    background-color: #FAF584;
     border-radius: 5px;
     bottom: auto;
     color: #111;
@@ -1194,7 +1194,7 @@ button.submit {
 button.submit:hover,
 .button.submit:focus,
 .button.submit:active {
-    background-color: #face9a;
+    background-color: #FAF476;
     color: #333;
 }
 /* 14. Footer
