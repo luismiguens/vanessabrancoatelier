@@ -84,19 +84,19 @@
       </trans-unit>
       <trans-unit id="61f267d331c8e5096270b1c2a883b455" resname="blog_my_journal">
         <source>blog_my_journal</source>
-        <target>__blog_my_journal</target>
+        <target>O MEU CADERNO</target>
       </trans-unit>
       <trans-unit id="e582b684c2d4fad3378d7932b4819f9f" resname="blog_intro">
         <source>blog_intro</source>
-        <target>__blog_intro</target>
+        <target>Coisas que vejo, registo e inspiram o meu quotidiano.</target>
       </trans-unit>
       <trans-unit id="c85e17aee6e862df59e7db3604722d08" resname="contact_say_hello">
         <source>contact_say_hello</source>
-        <target>__contact_say_hello</target>
+        <target>DIGA OLÁ</target>
       </trans-unit>
       <trans-unit id="40ec077ec1782f99bd62e498078f345d" resname="contact_intro">
         <source>contact_intro</source>
-        <target>__contact_intro</target>
+        <target>Encontre-me aqui e fale comigo.</target>
       </trans-unit>
       <trans-unit id="6ce5d968a140a04dd2012c42c76ee362" resname="contact_contact_details">
         <source>contact_contact_details</source>
@@ -108,11 +108,11 @@
       </trans-unit>
       <trans-unit id="3538421ad8580e377a77e36ba3fc2b21" resname="contact_contact_address">
         <source>contact_contact_address</source>
-        <target>__contact_contact_address</target>
+        <target>Morada</target>
       </trans-unit>
       <trans-unit id="7016ce2394e340b0a4c48e16405e754d" resname="contact_contact_email_us">
         <source>contact_contact_email_us</source>
-        <target>__contact_contact_email_us</target>
+        <target>Email</target>
       </trans-unit>
       <trans-unit id="cf50d619097ca83c623e3ec9e9101c36" resname="services_title">
         <source>services_title</source>
