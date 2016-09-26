@@ -6,9 +6,15 @@ app_admin_work:
     resource: "@AppBundle/Resources/config/routing/vbawork.yml"
     prefix:   /admin_work
 
+#homepage:
+#    path:     /
+#    defaults: { _controller: "AppBundle:Default:index" }
+   
 homepage:
-    path:     /
-    defaults: { _controller: "AppBundle:Default:index" }
+    path:      /{_locale}
+    defaults:  { _controller: AppBundle:Default:index, _locale: en }
+    requirements:
+        _locale:  en|pt
     
 contact:
     path:     /contact

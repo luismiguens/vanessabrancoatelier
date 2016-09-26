@@ -72,15 +72,15 @@
       </trans-unit>
       <trans-unit id="c061342b830460b0a263960e44c4ba83" resname="works_our">
         <source>works_our</source>
-        <target>__works_our</target>
+        <target></target>
       </trans-unit>
       <trans-unit id="ecc292d366962962845e06a171b60e9a" resname="works_intro">
         <source>works_intro</source>
-        <target>__works_intro</target>
+        <target>Diversos trabalhos realizados para clientes e pessoais.</target>
       </trans-unit>
       <trans-unit id="4d893dcd0849a886269a536d5d923edb" resname="works_type_all">
         <source>works_type_all</source>
-        <target>__works_type_all</target>
+        <target>Todos</target>
       </trans-unit>
       <trans-unit id="61f267d331c8e5096270b1c2a883b455" resname="blog_my_journal">
         <source>blog_my_journal</source>

@@ -72,15 +72,15 @@
       </trans-unit>
       <trans-unit id="c061342b830460b0a263960e44c4ba83" resname="works_our">
         <source>works_our</source>
-        <target>__works_our</target>
+        <target></target>
       </trans-unit>
       <trans-unit id="ecc292d366962962845e06a171b60e9a" resname="works_intro">
         <source>works_intro</source>
-        <target>__works_intro</target>
+        <target>Showcase of client and personal works.</target>
       </trans-unit>
       <trans-unit id="4d893dcd0849a886269a536d5d923edb" resname="works_type_all">
         <source>works_type_all</source>
-        <target>__works_type_all</target>
+        <target>All</target>
       </trans-unit>
       <trans-unit id="61f267d331c8e5096270b1c2a883b455" resname="blog_my_journal">
         <source>blog_my_journal</source>
@@ -124,7 +124,7 @@
       </trans-unit>
       <trans-unit id="b2a9f0bad83d2ec0b5de2aae77e8ae98" resname="services_01_title">
         <source>services_01_title</source>
-        <target>GRAPHIC AND INDUSTRIAL DESIGN</target>
+        <target>GRAPHIC <![CDATA[&]]> INDUSTRIAL DESIGN</target>
       </trans-unit>
       <trans-unit id="edd4024e8d1bfcfd871c1b4187659eb0" resname="services_01_intro">
         <source>services_01_intro</source>
