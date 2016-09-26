@@ -3,7 +3,7 @@ MAP -->
 =============================================== */
 
 var locations = [
-	['<div class="infobox"><h3 class="title"><a href="about.html">MY USA OFFICE</a></h3><span>NEW YORK CITY 4102 / 52</span><br><span>+71 325 988 32 81</span></div>', -37.812154, 144.954619, 2]
+	['<div class="infobox"><h3 class="title"><a href="#">MY OFFICE</a></h3><span>Rua da Misericórdia, nº 19 <br/>9500-093 Ponta Delgada, Azores, Portugal</span><br></div>', 37.74073206132569,-25.666473135352135, 2]
 	];     
 	var map = new google.maps.Map(document.getElementById('map'), {
 		zoom: 16,
@@ -14,7 +14,7 @@ var locations = [
 		draggable: true,
 		styles: [ { "stylers": [ { "hue": "#ffffff" },  {saturation: -100},
 		{gamma: 2} ] } ],
-		center: new google.maps.LatLng(-37.812154, 144.954619),
+		center: new google.maps.LatLng(37.74073206132569,-25.666473135352135),
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 		});
 		var infowindow = new google.maps.InfoWindow();
