@@ -37,7 +37,7 @@ class DefaultController extends Controller {
                 ->setSubject($subject)
                 ->setFrom($email)
                 ->setTo('contact@vanessabrancoatelier.com')
-                ->setBcc('luis.t.miguens@gmail.com')
+                ->setBcc('branco.vanessa@gmail.com')
                 ->setBody($name . ' said: ' . $message);
 
         $this->get('mailer')->send($email_message);
