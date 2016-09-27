@@ -95,7 +95,7 @@ class DefaultController extends Controller {
      $post = $em->getRepository('AppBundle:VbaPost')->findOneBy(array('title'=>$title));
         $posts = $em->getRepository('AppBundle:VbaPost')->findBy(array(), array('createdAt' => 'DESC'));
         
-dump($post);
+
         
         
         
