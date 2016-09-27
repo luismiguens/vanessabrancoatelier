@@ -74,4 +74,36 @@ class DefaultController extends Controller {
                     'types' => $types));
     }
 
+
+//    public function criteriasAction() {
+//
+//        $locale = $this->get('request')->getLocale();
+//        $loggedUser = $this->getUser();
+//
+//        //module
+//        $module = $this->getDoctrine()->getRepository('SkaphandrusAppBundle:SkIdentificationModule')
+//                ->findBySlug($slug, $locale);
+    
+    
+    public function postAction($title) {
+
+        $em = $this->getDoctrine()->getManager();
+        
+        
+        //$title = \AppBundle\Utils::unslugify($slug);
+
+     $post = $em->getRepository('AppBundle:VbaPost')->findOneBy(array('title'=>$title));
+        $posts = $em->getRepository('AppBundle:VbaPost')->findBy(array(), array('createdAt' => 'DESC'));
+        
+dump($post);
+        
+        
+        
+        return $this->render('AppBundle:Default:post.html.twig', array(
+                    'posts' => $posts,
+                    'post' => $post));
+    }
+    
+    
+    
 }

@@ -16,31 +16,26 @@
 
                 <div class="col-md-4 col-sm-6 blog wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
                     <span>{{post.createdAt|date("d")}}<br>{{post.createdAt|date("F")|slice(0, 3) }}</span>
-                        {#<img src="img/blog/1.jpg" alt="..." class="post-img">#}
 
                     {% if (post.image|length) %}
                         <img class="post-img" src="{{ post.getWebPath | imagine_filter('sk_downscale_max_600_600') }}" />
-
                     {% else %}
                         {{ post.video|replace({' height="315"':'', 'width="560"':'width="350"'})|raw }}
                     {% endif %}
 
-
-
                     <h3>{{post.title}}</h3>
                     <h4>{{post.author}} . {{post.createdAt|date("d/m/Y")}}</h4>
                     <p>{{post.text}}</p>
-                    <a data-toggle="modal" data-target="#myModal_{{post.id}}" href="#" class="read-more">Read more <i class="fa fa-angle-right"></i></a>
+{#                    <a data-toggle="modal" data-target="#myModal_{{post.id}}" href="#" class="read-more">Read more <i class="fa fa-angle-right"></i></a>#}
+                    <a href="{{ path('post', { 'title': post.title }) }}" class="read-more">Read more <i class="fa fa-angle-right"></i></a>
 
-                    {#         <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-               Launch demo modal
-             </button>#}
+
 
                 </div>
 
 
                 <!-- Modal -->
-                <div class="modal fade" id="myModal_{{post.id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+{#                <div class="modal fade" id="myModal_{{post.id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -49,99 +44,28 @@
                             </div>
                             <div class="modal-body">
 
-
-
-                                {#<span>{{post.createdAt|date("d")}}<br>{{post.createdAt|date("F")|slice(0, 3) }}</span>#}
-                                {#<img src="img/blog/1.jpg" alt="..." class="post-img">#}
-
-
-                                {#<img class="post-img" src="{{ post.getWebPath | imagine_filter('sk_downscale_max_600_600') }}" />#}
-
-
                                 {% if (post.image|length) %}
                                     <img class="post-img" src="{{ post.getWebPath | imagine_filter('sk_downscale_max_600_600') }}" />
-
                                 {% else %}
                                     {{ post.video|raw }}
                                 {% endif %}
-
-
 
                                 <h3><a href="#">{{post.title}}</a></h3>
                                 <h4>{{post.author}} . {{post.createdAt|date("d/m/Y")}}</h4>
                                 <p>{{post.text}}</p>
 
-
-
-
-
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                {#<button type="button" class="btn btn-primary">Save changes</button>#}
                             </div>
                         </div>
                     </div>
-                </div>
-
+                </div>#}
+                <!-- Modal end-->
 
 
             {% endfor %}
-            {#
-        <div class="col-md-4 col-sm-6 blog wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
-            <span>16<br>Aug</span>
-            <img src="img/blog/2.jpg" alt="..." class="post-img">
-            <h3><a href="#">Simple journal post</a></h3>
-            <h4>By John Doe . 16 Aug 2015</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <a href="#" class="read-more">Read more <i class="fa fa-angle-right"></i></a>
-        </div>
-
-        <div class="col-md-4 col-sm-6 blog wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
-            <span>24<br>May</span>
-            <img src="img/blog/3.jpg" alt="..." class="post-img">
-            <h3><a href="#">Journal post with image</a></h3>
-            <h4>By John Doe . 24 May 2015</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <a href="#" class="read-more">Read more <i class="fa fa-angle-right"></i></a>
-        </div>
-
-        <div class="col-md-4 col-sm-6 blog wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-            <span>23<br>Oct</span>
-            <img src="img/blog/4.jpg" alt="..." class="post-img">
-            <h3><a href="#">Journal post with image</a></h3>
-            <h4>By John Doe . 23 Oct 2015</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <a href="#" class="read-more">Read more <i class="fa fa-angle-right"></i></a>
-        </div>
-
-        <div class="col-md-4 col-sm-6 blog wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
-            <span>16<br>Aug</span>
-            <img src="img/blog/5.jpg" alt="..." class="post-img">
-            <h3><a href="#">Simple journal post</a></h3>
-            <h4>By John Doe . 16 Aug 2015</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <a href="#" class="read-more">Read more <i class="fa fa-angle-right"></i></a>
-        </div>
-
-        <div class="col-md-4 col-sm-6 blog wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
-            <span>24<br>May</span>
-            <img src="img/blog/6.jpg" alt="..." class="post-img">
-            <h3><a href="#">Journal post with image</a></h3>
-            <h4>By John Doe . 24 May 2015</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <a href="#" class="read-more">Read more <i class="fa fa-angle-right"></i></a>
-        </div>#}
+           
         </div>
     </div>
 </section>

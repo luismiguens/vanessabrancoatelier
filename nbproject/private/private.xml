@@ -3,8 +3,27 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/home/luis/sfprojects/vanessabrancoatelier/src/AppBundle/Resources/views/layout.html.twig</file>
             <file>file:/home/luis/sfprojects/vanessabrancoatelier/app/Resources/AppBundle/translations/messages.pt.xlf</file>
+            <file>file:/home/luis/sfprojects/vanessabrancoatelier/src/AppBundle/Resources/public/js/contact_me.js</file>
+            <file>file:/home/luis/sfprojects/vanessabrancoatelier/src/AppBundle/Resources/config/doctrine/VbaPost.orm.xml</file>
+            <file>file:/home/luis/sfprojects/vanessabrancoatelier/src/AppBundle/Resources/views/Default/footer.html.twig</file>
+            <file>file:/home/luis/sfprojects/vanessabrancoatelier/src/AppBundle/Form/VbaPostType.php</file>
+            <file>file:/home/luis/sfprojects/vanessabrancoatelier/src/AppBundle/Resources/public/css/colors/red.css</file>
+            <file>file:/home/luis/sfprojects/vanessabrancoatelier/src/AppBundle/Resources/views/Default/blog.html.twig</file>
             <file>file:/home/luis/sfprojects/vanessabrancoatelier/app/Resources/AppBundle/translations/messages.en.xlf</file>
+            <file>file:/home/luis/sfprojects/vanessabrancoatelier/src/AppBundle/Resources/views/Default/works.html.twig</file>
+            <file>file:/home/luis/sfprojects/vanessabrancoatelier/src/AppBundle/Resources/public/css/colors/yellow.css</file>
+            <file>file:/home/luis/sfprojects/vanessabrancoatelier/src/AppBundle/Entity/VbaWork.php</file>
+            <file>file:/home/luis/sfprojects/vanessabrancoatelier/src/AppBundle/Resources/public/css/colors/blue.css</file>
+            <file>file:/home/luis/sfprojects/vanessabrancoatelier/src/AppBundle/Resources/public/js/main.js</file>
+            <file>file:/home/luis/sfprojects/vanessabrancoatelier/src/AppBundle/Resources/views/Default/navigation.html.twig</file>
+            <file>file:/home/luis/sfprojects/vanessabrancoatelier/src/AppBundle/Resources/public/css/owl.theme.css</file>
+            <file>file:/home/luis/sfprojects/vanessabrancoatelier/src/AppBundle/Resources/public/css/style.css</file>
+            <file>file:/home/luis/sfprojects/vanessabrancoatelier/src/AppBundle/Resources/config/routing/vbapost.yml</file>
+            <file>file:/home/luis/sfprojects/vanessabrancoatelier/src/AppBundle/Controller/DefaultController.php</file>
+            <file>file:/home/luis/sfprojects/vanessabrancoatelier/src/AppBundle/Resources/public/css/colors/green.css</file>
+            <file>file:/home/luis/sfprojects/vanessabrancoatelier/src/AppBundle/Entity/VbaPost.php</file>
         </group>
     </open-files>
 </project-private>

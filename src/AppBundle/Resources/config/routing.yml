@@ -15,6 +15,13 @@ homepage:
     defaults:  { _controller: AppBundle:Default:index, _locale: en }
     requirements:
         _locale:  en|pt
+        
+        
+post:
+    path:      /{_locale}/{title}
+    defaults:  { _controller: AppBundle:Default:post, _locale: en }
+    requirements:
+        _locale:  en|pt
     
 contact:
     path:     /contact

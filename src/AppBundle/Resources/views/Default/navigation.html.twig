@@ -14,17 +14,17 @@
                <span class="icon-bar"></span>
                <span class="icon-bar"></span>
                </button>
-               <a class="navbar-brand" href="#"><i class="fa fa-caret-up"></i> Vanessa</a>
+               <a class="navbar-brand" href="{{ path('homepage', { '_locale': app.request.locale }) }}#home">{#<i class="fa fa-caret-up"></i>#} Vanessa</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#home" class="page-scroll">{% trans %}Home{% endtrans %}</a></li>
-                  <li><a href="#about" class="page-scroll">{% trans %}About Us{% endtrans %}</a></li>
-                  <li><a href="#services" class="page-scroll">{% trans %}Services{% endtrans %}</a></li>
-                  <li><a href="#works" class="page-scroll">{% trans %}Works{% endtrans %}</a></li>
-                  <li><a href="#resume" class="page-scroll">{% trans %}Resume{% endtrans %}</a></li>
-                  <li><a href="#Contact" class="page-scroll">{% trans %}Contact{% endtrans %}</a></li>
+                  <li><a href="{{ path('homepage', { '_locale': app.request.locale }) }}#home" class="page-scroll">{% trans %}Home{% endtrans %}</a></li>
+                  <li><a href="{{ path('homepage', { '_locale': app.request.locale }) }}#about" class="page-scroll">{% trans %}About Us{% endtrans %}</a></li>
+                  <li><a href="{{ path('homepage', { '_locale': app.request.locale }) }}#services" class="page-scroll">{% trans %}Services{% endtrans %}</a></li>
+                  <li><a href="{{ path('homepage', { '_locale': app.request.locale }) }}#works" class="page-scroll">{% trans %}Works{% endtrans %}</a></li>
+                  <li><a href="{{ path('homepage', { '_locale': app.request.locale }) }}#resume" class="page-scroll">{% trans %}Resume{% endtrans %}</a></li>
+                  <li><a href="{{ path('homepage', { '_locale': app.request.locale }) }}#Contact" class="page-scroll">{% trans %}Contact{% endtrans %}</a></li>
                </ul>
             </div>
             <!-- /.navbar-collapse -->
