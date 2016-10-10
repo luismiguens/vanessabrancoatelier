@@ -24,11 +24,11 @@
       </trans-unit>
       <trans-unit id="7b8af977b90a67e053ff2667a26828fe" resname="Works">
         <source>Works</source>
-        <target>PROJECTS</target>
+        <target>PORTFOLIO</target>
       </trans-unit>
       <trans-unit id="f1cefec9e2196c672a622347f1fbc325" resname="Resume">
         <source>Resume</source>
-        <target>RESUMÉ</target>
+        <target>RESUME</target>
       </trans-unit>
       <trans-unit id="bbaff12800505b22a853e8b7f4eb6a22" resname="Contact">
         <source>Contact</source>
@@ -392,6 +392,19 @@
         <source>testimonials_name_and_position_05</source>
         <target>Raquel Candelária Guimarães, Advogada/Lawyer</target>
       </trans-unit>
+      
+      
+      
+      <trans-unit id="a62b431cd543c1534272f9223494d619bf" resname="testimonials_intro_06">
+        <source>testimonials_intro_06</source>
+        <target>Companies have been looking for an integrated solution of product and services concerning quality and budgets. Vanessa combines intelligently, graphic design and the manufacturing of many products.</target>
+      </trans-unit>
+      <trans-unit id="e7cd17e667541b1229244eb14ae30157e3" resname="testimonials_name_and_position_06">
+        <source>testimonials_name_and_position_06   </source>
+        <target>Ruben Cordeiro, Chartered Accountant</target>
+      </trans-unit>
+      
+      
       
     </body>
   </file>

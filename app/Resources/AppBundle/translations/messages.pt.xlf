@@ -24,7 +24,7 @@
       </trans-unit>
       <trans-unit id="7b8af977b90a67e053ff2667a26828fe" resname="Works">
         <source>Works</source>
-        <target>PROJETOS</target>
+        <target>PORTFOLIO</target>
       </trans-unit>
       <trans-unit id="f1cefec9e2196c672a622347f1fbc325" resname="Resume">
         <source>Resume</source>
@@ -400,6 +400,17 @@
         <source>testimonials_name_and_position_05</source>
         <target>Raquel Candelária Guimarães, Advogada/Lawyer</target>
       </trans-unit>
+      
+      
+      <trans-unit id="a62b431cd543c1534272f9223494d619bf" resname="testimonials_intro_06">
+        <source>testimonials_intro_06</source>
+        <target>As empresas têm vindo a procurar produtos e serviços integrados por razões de qualidade e poupança. A Vanessa junta inteligentemente o design gráfico à produção e fornecimento de vários produtos.</target>
+      </trans-unit>
+      <trans-unit id="e7cd17e667541b1229244eb14ae30157e3" resname="testimonials_name_and_position_06">
+        <source>testimonials_name_and_position_06   </source>
+        <target>Ruben Cordeiro, Revisor Oficial de Contas</target>
+      </trans-unit>
+      
       
       
     </body>

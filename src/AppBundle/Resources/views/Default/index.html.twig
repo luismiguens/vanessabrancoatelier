@@ -7,12 +7,16 @@
     {% include 'AppBundle:Default:about.html.twig' %}
     {% include 'AppBundle:Default:services.html.twig' %}
     {% include 'AppBundle:Default:works.html.twig' with {'works': works, 'types':types } %}
+    {% include 'AppBundle:Default:testimonials.html.twig' %}
+    {% include 'AppBundle:Default:blog.html.twig'  with {'posts': posts } %}
+    
+    
     {% include 'AppBundle:Default:resume.html.twig' %}
     {#{% include 'AppBundle:Default:team.html.twig' %}
     {% include 'AppBundle:Default:team-about.html.twig' %}#}
-    {% include 'AppBundle:Default:testimonials.html.twig' %}
+    
     {#{% include 'AppBundle:Default:clients.html.twig' %}#}
-    {% include 'AppBundle:Default:blog.html.twig'  with {'posts': posts } %}
+    
     {% include 'AppBundle:Default:contact.html.twig' %}
 
     {% include 'AppBundle:Default:footer.html.twig' %}
