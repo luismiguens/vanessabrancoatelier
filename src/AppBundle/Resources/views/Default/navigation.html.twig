@@ -15,6 +15,9 @@
                <span class="icon-bar"></span>
                </button>
                <a class="navbar-brand" href="{{ path('homepage', { '_locale': app.request.locale }) }}#home">{#<i class="fa fa-caret-up"></i>#} Vanessa</a>
+               <ul class="nav navbar-nav navbar-left">
+                  <li><a href="{{ path('homepage', { '_locale': 'pt' }) }}">PT</a></li><li><a href="{{ path('homepage', { '_locale': 'en' }) }}">EN</a></li>
+               </ul>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -25,7 +28,8 @@
                   <li><a href="{{ path('homepage', { '_locale': app.request.locale }) }}#works" class="page-scroll">{% trans %}Works{% endtrans %}</a></li>
                   <li><a href="{{ path('homepage', { '_locale': app.request.locale }) }}#resume" class="page-scroll">{% trans %}Resume{% endtrans %}</a></li>
                   <li><a href="{{ path('homepage', { '_locale': app.request.locale }) }}#Contact" class="page-scroll">{% trans %}Contact{% endtrans %}</a></li>
-         
+                  
+                  
                
                </ul>
             </div>
