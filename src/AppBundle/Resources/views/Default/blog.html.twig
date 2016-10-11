@@ -10,6 +10,11 @@
             <p>{% trans %}blog_intro{% endtrans %}</p>
         </div>
         <div class="space"></div>
+        
+        
+        
+        
+        
         <div id="blog-masonry">
 
             {% for post in posts %}
@@ -21,6 +26,8 @@
                         <img class="post-img" src="{{ post.getWebPath | imagine_filter('sk_downscale_max_600_600') }}" />
                     {% else %}
                         {{ post.video|replace({' height="315"':'', 'width="560"':'width="350"'})|raw }}
+                        {#<iframe width="560" height="315" src="https://www.youtube.com/embed/LQu8PkSXpdQ" frameborder="0" allowfullscreen></iframe>#}
+                        {#<iframe width="408" height="230" src="https://www.youtube.com/embed/LQu8PkSXpdQ" frameborder="0" allowfullscreen></iframe>#}
                     {% endif %}
 
                     <h3>{{post.title}}</h3>

@@ -87,21 +87,34 @@ class DefaultController extends Controller {
     
     public function postAction($title) {
 
-        $em = $this->getDoctrine()->getManager();
+      
         
-        
-        //$title = \AppBundle\Utils::unslugify($slug);
+       $em = $this->getDoctrine()->getManager();
 
-     $post = $em->getRepository('AppBundle:VbaPost')->findOneBy(array('title'=>$title));
+        $works = $em->getRepository('AppBundle:VbaWork')->findBy(array(), array('createdAt' => 'DESC'));
         $posts = $em->getRepository('AppBundle:VbaPost')->findBy(array(), array('createdAt' => 'DESC'));
+        $types = $em->getRepository('AppBundle:VbaType')->findAll();
+   $post = $em->getRepository('AppBundle:VbaPost')->findOneBy(array('title'=>$title));
         
-
+        
         
         
         
         return $this->render('AppBundle:Default:post.html.twig', array(
+                    'works' => $works,
                     'posts' => $posts,
-                    'post' => $post));
+                    'types' => $types,
+            'post'=>$post));
+
+  
+        
+//
+//        
+//        
+//        
+//        return $this->render('AppBundle:Default:post.html.twig', array(
+//                    'posts' => $posts,
+//                    'post' => $post));
     }
     
     
