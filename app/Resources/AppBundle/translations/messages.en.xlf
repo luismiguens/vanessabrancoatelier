@@ -26,9 +26,13 @@
         <source>Works</source>
         <target>PORTFOLIO</target>
       </trans-unit>
+      <trans-unit id="bbaff12800505Wb22a853e8b7f4eb6a22" resname="blog">
+        <source>blog</source>
+        <target>JOURNAL</target>
+      </trans-unit>
       <trans-unit id="f1cefec9e2196c672a622347f1fbc325" resname="Resume">
         <source>Resume</source>
-        <target>RESUME</target>
+        <target>CV</target>
       </trans-unit>
       <trans-unit id="bbaff12800505b22a853e8b7f4eb6a22" resname="Contact">
         <source>Contact</source>
@@ -72,7 +76,7 @@
       </trans-unit>
       <trans-unit id="c061342b830460b0a263960e44c4ba83" resname="works_our">
         <source>works_our</source>
-        <target></target>
+        <target>MY <![CDATA[<mark>PORTFOLIO</mark>]]></target>
       </trans-unit>
       <trans-unit id="ecc292d366962962845e06a171b60e9a" resname="works_intro">
         <source>works_intro</source>
@@ -84,7 +88,7 @@
       </trans-unit>
       <trans-unit id="61f267d331c8e5096270b1c2a883b455" resname="blog_my_journal">
         <source>blog_my_journal</source>
-        <target>MY JOURNAL</target>
+        <target>MY <![CDATA[<mark>JOURNAL</mark>]]></target>
       </trans-unit>
       <trans-unit id="e582b684c2d4fad3378d7932b4819f9f" resname="blog_intro">
         <source>blog_intro</source>
@@ -92,7 +96,7 @@
       </trans-unit>
       <trans-unit id="c85e17aee6e862df59e7db3604722d08" resname="contact_say_hello">
         <source>contact_say_hello</source>
-        <target>SAY HELLO</target>
+        <target>SAY <![CDATA[<mark>HELLO</mark>]]></target>
       </trans-unit>
       <trans-unit id="40ec077ec1782f99bd62e498078f345d" resname="contact_intro">
         <source>contact_intro</source>
@@ -116,7 +120,7 @@
       </trans-unit>
       <trans-unit id="cf50d619097ca83c623e3ec9e9101c36" resname="services_title">
         <source>services_title</source>
-        <target>SERVICES</target>
+        <target>MY <![CDATA[<mark>SERVICES</mark>]]></target>
       </trans-unit>
       <trans-unit id="95af578fe6413ad7ad44f5ec56137b49" resname="services_intro">
         <source>services_intro</source>
@@ -172,7 +176,7 @@
       </trans-unit>
       <trans-unit id="c0e9c62cab85b5d88808f46cc4ee01a3" resname="resume_title">
         <source>resume_title</source>
-        <target>MY RESUME</target>
+        <target>MY <![CDATA[<mark>CV</mark>]]></target>
       </trans-unit>
       <trans-unit id="6690108d3168e9b24370f7243d6c19d3" resname="resume_intro">
         <source>resume_intro</source>
@@ -346,7 +350,7 @@
       
       <trans-unit id="3f280a29d84ce00g66982b7b4622514af" resname="testimonials_what_they_say">
         <source>testimonials_what_they_say</source>
-        <target>WHAT THEY SAY</target>
+        <target>WHAT <![CDATA[<mark>THEY</mark>]]> SAY</target>
       </trans-unit>
       <trans-unit id="ee35a2df0629ad43g326dac225f3faede" resname="testimonials_intro_01">
         <source>testimonials_intro_01</source>
