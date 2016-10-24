@@ -32,7 +32,7 @@
 
                     <h3>{{post.title}}</h3>
                     <h4>{{post.author}} . {{post.createdAt|date("d/m/Y")}}</h4>
-                    <p>{{post.text|slice(0, 260)}}</p>
+                    <p>{{post.text|slice(0, 260)|raw}}</p>
 {#                    <a data-toggle="modal" data-target="#myModal_{{post.id}}" href="#" class="read-more">Read more <i class="fa fa-angle-right"></i></a>#}
                     <a href="{{ path('post', { 'title': post.title }) }}" class="read-more">Read more <i class="fa fa-angle-right"></i></a>
 
