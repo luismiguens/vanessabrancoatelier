@@ -51,10 +51,7 @@ class DefaultController extends Controller {
 
 //        return new \Symfony\Component\HttpFoundation\JsonResponse($response);
 
-                return $this->render('AppBundle:Default:message.html.twig');
-
-
-
+        return $this->render('AppBundle:Default:message.html.twig');
     }
 
     /**
@@ -74,7 +71,6 @@ class DefaultController extends Controller {
                     'types' => $types));
     }
 
-
 //    public function criteriasAction() {
 //
 //        $locale = $this->get('request')->getLocale();
@@ -83,31 +79,29 @@ class DefaultController extends Controller {
 //        //module
 //        $module = $this->getDoctrine()->getRepository('SkaphandrusAppBundle:SkIdentificationModule')
 //                ->findBySlug($slug, $locale);
-    
-    
+
+
     public function postAction($title) {
 
-      
-        
-       $em = $this->getDoctrine()->getManager();
+        $em = $this->getDoctrine()->getManager();
 
         $works = $em->getRepository('AppBundle:VbaWork')->findBy(array(), array('createdAt' => 'DESC'));
         $posts = $em->getRepository('AppBundle:VbaPost')->findBy(array(), array('createdAt' => 'DESC'));
         $types = $em->getRepository('AppBundle:VbaType')->findAll();
-   $post = $em->getRepository('AppBundle:VbaPost')->findOneBy(array('title'=>$title));
+       
         
+        $unslug = \AppBundle\Utils\Utils::unslugify($title);
         
-        
-        
-        
+        $post = $em->getRepository('AppBundle:VbaPost')->findOneBy(array('title' => $unslug));
+
         return $this->render('AppBundle:Default:post.html.twig', array(
                     'works' => $works,
                     'posts' => $posts,
                     'types' => $types,
-            'post'=>$post));
+                    'post' => $post));
 
-  
-        
+
+
 //
 //        
 //        
@@ -116,7 +110,5 @@ class DefaultController extends Controller {
 //                    'posts' => $posts,
 //                    'post' => $post));
     }
-    
-    
-    
+
 }
