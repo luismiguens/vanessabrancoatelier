@@ -23,7 +23,9 @@
                     <span>{{post.createdAt|date("d")}}<br>{{post.createdAt|date("F")|slice(0, 3) }}</span>
 
                     {% if (post.image|length) %}
-                        <img class="post-img" src="{{ post.getWebPath | imagine_filter('sk_downscale_max_600_600') }}" />
+                        
+                        <a href="{{ url_to_post(post) }}"><img class="post-img" src="{{ post.getWebPath | imagine_filter('sk_downscale_max_600_600') }}" /> </a>
+                        
                     {% else %}
                         {{ post.video|replace({' height="315"':'', 'width="560"':'width="350"'})|raw }}
                         {#<iframe width="560" height="315" src="https://www.youtube.com/embed/LQu8PkSXpdQ" frameborder="0" allowfullscreen></iframe>#}
@@ -34,7 +36,7 @@
                     <h4>{{post.author}} . {{post.createdAt|date("d/m/Y")}}</h4>
                     <p>{{post.text|slice(0, 260)|raw}}</p>
 {#                    <a data-toggle="modal" data-target="#myModal_{{post.id}}" href="#" class="read-more">Read more <i class="fa fa-angle-right"></i></a>#}
-                    <a href="{{ url_to_post(post) }}" class="read-more">Read more <i class="fa fa-angle-right"></i></a>
+<a href="{{ url_to_post(post) }}" class="read-more"><b>Read more <i class="fa fa-angle-right"></i></b></a>
 
 
 

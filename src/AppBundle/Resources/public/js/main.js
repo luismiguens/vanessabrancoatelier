@@ -69,7 +69,8 @@
 
     /* MagnificPopup Lightbox */
     $('#lightbox').magnificPopup({
-        delegate: 'a',
+        //delegate: 'a',
+        delegate: '.isotope-item:not(.isotope-hidden) a.image-link',
         type: 'image',
         gallery: {
             enabled: true,
@@ -123,9 +124,65 @@
                     queue: false
                 }
             });
+            
+            
+//            $container.magnificPopup({
+//					delegate: '.isotope-item:not(.isotope-hidden) a.image-link',
+//					type: 'image',
+//					image: {
+//						titleSrc: 'alt',
+//						verticalFit: true
+//					},
+//					gallery:{
+//						enabled:true
+//					}
+//				});  
+            
+            
             return false;
         });
 
     });
+    
+    
+//    // Execute Isotope for first time positioning
+//	$(window).load(function(){
+//		$('#lightbox').isotope({
+//		  itemSelector : '.portfolio-item',
+//		  layoutMode : 'fitRows'
+//		})
+//	});	
+//	// Execute again while using filters for gallery
+//	$('#filters a').click(function(ev){
+//            alert(1);
+//		ev.preventDefault();
+//		var selector = $(this).attr('data-filter');
+//                alert(selector);
+//                
+//		$('#lightbox').isotope({
+//			filter: selector
+//			},function() {
+//                            
+//                            alert(2);
+//				$('#lightbox').magnificPopup({
+//					delegate: '.isotope-item:not(.isotope-hidden) a.image-link',
+//					type: 'image',
+//					image: {
+//						titleSrc: 'alt',
+//						verticalFit: true
+//					},
+//					gallery:{
+//						enabled:true
+//					}
+//				});        
+//			});
+//		$('#filters > li > a').removeClass('A-select'); 
+//		$(this).addClass('A-select'); 
+//		return false;
+//	});
+//    
+    
+    
+    
 
 })(jQuery);

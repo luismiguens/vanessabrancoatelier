@@ -11,7 +11,7 @@
         <div class="categories">
             <ul class="cat text-center">
                 <li>
-                    <ol class="type">
+                    <ol id="filters" class="type">
                         <li><a href="#" data-filter="*" class="active">{% trans %}works_type_all{% endtrans %}</a></li>
                             {% for type in types %}
                             <li><a href="#" data-filter=".{{type.id}}">{{ type}}</a></li>
