@@ -69,8 +69,8 @@
 
     /* MagnificPopup Lightbox */
     $('#lightbox').magnificPopup({
-        //delegate: 'a',
-        delegate: '.isotope-item:not(.isotope-hidden) a.image-link',
+        delegate: 'a',
+        //delegate: '.isotope-item:not(.isotope-hidden) a.image-link',
         type: 'image',
         gallery: {
             enabled: true,
