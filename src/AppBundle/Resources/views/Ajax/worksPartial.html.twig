@@ -1,0 +1,22 @@
+{# empty Twig template #}
+{% set t = "" %}
+                {% for type in work.type %}
+                    {% set t = t ~" "~ type.id %}
+                {% endfor %}
+
+                <div class="col-sm-6 col-md-4 col-lg-4 {{ t }}">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="{{ work.getWebPath | imagine_filter('sk_downscale_max_600_600') }}">
+                                <div class="hover-text">
+                                    <h4>{{work.project}}</h4>
+                                    <hr class="line">
+                                    <small>{{ work.type|join(', ') }}</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-link"></i>
+                                </div>
+                                <img class="img-responsive" src="{{ work.getWebPath | imagine_filter('sk_downscale_max_600_600') }}" />
+                            </a>
+                        </div>
+                    </div>
+                </div>

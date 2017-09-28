@@ -96,51 +96,51 @@
     });
 
     /* Isotope Filter */
-    $(window).load(function(){
-    var $container2 = $('#blog-masonry');
-      $container2.isotope({
-          itemSelector: '.blog'
-      });
-    });
+//    $(window).load(function(){
+//    var $container2 = $('#blog-masonry');
+//      $container2.isotope({
+//          itemSelector: '.blog'
+//      });
+//    });
     $(window).load(function() {
-        var $container = $('#lightbox');
-        $container.isotope({
-            filter: '*',
-            animationOptions: {
-                duration: 750,
-                easing: 'linear',
-                queue: false
-            }
-        });
-        $('.cat a').click(function() {
-            $('.cat .active').removeClass('active');
-            $(this).addClass('active');
-            var selector = $(this).attr('data-filter');
-            $container.isotope({
-                filter: selector,
-                animationOptions: {
-                    duration: 750,
-                    easing: 'linear',
-                    queue: false
-                }
-            });
-            
-            
-//            $container.magnificPopup({
-//					delegate: '.isotope-item:not(.isotope-hidden) a.image-link',
-//					type: 'image',
-//					image: {
-//						titleSrc: 'alt',
-//						verticalFit: true
-//					},
-//					gallery:{
-//						enabled:true
-//					}
-//				});  
-            
-            
-            return false;
-        });
+//        var $container = $('#lightbox');
+//        $container.isotope({
+//            filter: '*',
+//            animationOptions: {
+//                duration: 750,
+//                easing: 'linear',
+//                queue: false
+//            }
+//        });
+//        $('.cat a').click(function() {
+//            $('.cat .active').removeClass('active');
+//            $(this).addClass('active');
+//            var selector = $(this).attr('data-filter');
+//            $container.isotope({
+//                filter: selector,
+//                animationOptions: {
+//                    duration: 750,
+//                    easing: 'linear',
+//                    queue: false
+//                }
+//            });
+//            
+//            
+////            $container.magnificPopup({
+////					delegate: '.isotope-item:not(.isotope-hidden) a.image-link',
+////					type: 'image',
+////					image: {
+////						titleSrc: 'alt',
+////						verticalFit: true
+////					},
+////					gallery:{
+////						enabled:true
+////					}
+////				});  
+//            
+//            
+//            return false;
+//        });
 
     });
     
@@ -186,3 +186,6 @@
     
 
 })(jQuery);
+
+
+

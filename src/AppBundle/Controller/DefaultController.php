@@ -62,13 +62,14 @@ class DefaultController extends Controller {
 
         $em = $this->getDoctrine()->getManager();
 
-        $works = $em->getRepository('AppBundle:VbaWork')->findBy(array(), array('createdAt' => 'DESC'));
-        $posts = $em->getRepository('AppBundle:VbaPost')->findBy(array(), array('createdAt' => 'DESC'));
+        //$works = $em->getRepository('AppBundle:VbaWork')->findBy(array(), array('createdAt' => 'DESC'));
+        
+        
+        
         $types = $em->getRepository('AppBundle:VbaType')->findAll();
 
         return $this->render('AppBundle:Default:index.html.twig', array(
-                    'works' => $works,
-                    'posts' => $posts,
+                    //'works' => $works,
                     'types' => $types));
     }
 

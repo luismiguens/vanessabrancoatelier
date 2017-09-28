@@ -1,0 +1,125 @@
+{# empty Twig template #}
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="{{ app.request.locale }}" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="{{ app.request.locale }}" class="ie9"> <![endif]-->  
+<head>
+    <meta charset="utf-8">
+    <!--[if IE]>
+    <meta http-equiv="x-ua-compatible" content="IE=9" />
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jQuery Version 2.1.3 -->
+    <script type="text/javascript" src="{{ asset('bundles/app/js/jquery.js') }}"></script>
+
+
+
+</head>
+
+
+<body>
+
+
+
+
+
+
+{% block body %}{% endblock %}
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+// external js: isotope.pkgd.js
+
+var limit_posts = 1;
+                   var offset_posts = -1;
+
+
+var $grid = $('.grid').isotope({
+  itemSelector: '.grid-item',
+  masonry: {
+    columnWidth: 180
+  }
+});
+
+$('.append-button').on( 'click', function() {
+  // create new item elements
+  //var $items = getItemElement(1).add( getItemElement(2) ).add( getItemElement(1) );
+  //var $items = getItemElement().add( getItemElement() ).add( getItemElement() );
+  var $items = getItemElement();
+  // append elements to container
+  $grid.append( $items )
+    // add and lay out newly appended elements
+    .isotope( 'appended', $items );
+});
+
+
+// make <div class="grid-item grid-item--width# grid-item--height#" />
+{#function getItemElement($t) {
+        
+    var $text = "";
+    
+    if ($t == 1){
+        $text = "Inicio: desta vez vai funcionar:Fim.";
+    }
+    
+    if ($t == 2){
+        $text = "Inicio: vamos ver se desta vez este texto mais comprido funciona bem:Fim.";
+    }
+    
+  var $item = $('<div class="grid-item">'+$text+'</div>');
+  // add width and height class
+
+  return $item;
+}#}
+
+
+
+function getItemElement() {
+  //var $item = $('<div class="blog">aaaaaaa</div>');
+
+var $iii;
+
+
+offset_posts = offset_posts + 1;
+   $.ajax({
+                               type: "get",
+                               url: "{{path("ajax_posts_show_more")}}",
+                               data: 'limit=' + limit_posts + '&offset=' + offset_posts,
+                               dataType: "json",
+                               async: false,
+                               beforeSend: function (xhr) {
+    if (xhr && xhr.overrideMimeType) {
+      xhr.overrideMimeType('application/json;charset=utf-8');
+    }
+  },
+                               success: function (data) {
+                                   
+                                //alert(data.items[0]);
+                                
+                                $iii = data.items;
+                                   
+
+
+                                               }
+                                           })
+
+
+return $iii;
+
+}
+
+
+});
+
+</script>
+
+
+<script type="text/javascript" src="{{ asset('bundles/app/js/jquery.isotope.js') }}"></script>
+
+
+
+
+
+</body>
+</html>

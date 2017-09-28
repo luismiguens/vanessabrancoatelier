@@ -1,3 +1,78 @@
+
+
+<script type="text/javascript">
+
+    function getItemElements(type) {
+        $.ajax({
+            type: "get",
+            url: "{{path("ajax_works")}}",
+            data: 'type=' + type,
+            dataType: "json",
+            async: false,
+            beforeSend: function (xhr) {
+                if (xhr && xhr.overrideMimeType) {
+                    xhr.overrideMimeType('application/json;charset=utf-8');
+                }
+            },
+            success: function (data) {
+                $("#lightbox").html("");
+                $("#lightbox").append(data.items);
+            }
+        });
+
+    }
+
+    $(document).ready(function () {
+
+        {#var limit_posts = 6;
+        var offset_posts = -6;
+
+        var $container = $('#blog-masonry');
+        $container.imagesLoaded(function () {
+            // init Isotope after all images have loaded
+            $container.isotope({
+                // options
+                itemSelector: '.blog',
+                masonry: {
+                    //columnWidth: 160,
+                    isFitWidth: true
+                }
+            });
+        });
+
+        $('.append-button').on('click', function () {
+            // create new item elements
+            getItemElements();
+
+            $container.isotope('destroy'); //destroying isotope
+            $container = $('#blog-masonry');
+            $container.imagesLoaded(function () {
+                // init Isotope after all images have loaded
+                $container.isotope({
+                    // options
+                    itemSelector: '.blog',
+                    masonry: {
+                        //columnWidth: 160,
+                        isFitWidth: true
+                    }
+                });
+            });
+
+
+            $('html, body').animate({scrollTop: $("#posts_button").offset().top - 1400}, 1000);
+
+        });#}
+        getItemElements(1);
+    });
+
+
+
+</script>
+
+
+
+
+
 <!-- Portfolio Section -->
 <section id="works">
     <div class="container">
@@ -12,9 +87,10 @@
             <ul class="cat text-center">
                 <li>
                     <ol id="filters" class="type">
-                        <li><a href="#" data-filter="*" class="active">{% trans %}works_type_all{% endtrans %}</a></li>
+                        <li>{#<a href="#" data-filter="*" class="active">{% trans %}works_type_all{% endtrans %}</a></li>#}
                             {% for type in types %}
-                            <li><a href="#" data-filter=".{{type.id}}">{{ type}}</a></li>
+                            <li><a href="#" onclick="getItemElements({{type.id}});
+                                    return false;" data-filter=".{{type.id}}">{{ type}}</a></li>
                             {% endfor %}
 
 
@@ -26,122 +102,7 @@
         <div id="lightbox" class="row wow fadeInUp">
 
 
-            {% for work in works %}
 
-                
-
-                {% set t = "" %}
-                {% for type in work.type %}
-                    {% set t = t ~" "~ type.id %}
-                {% endfor %}
-
-
-
-
-                <div class="col-sm-6 col-md-4 col-lg-4 {{ t }}">
-                    <div class="portfolio-item">
-                        <div class="hover-bg">
-                            <a href="{{ work.getWebPath | imagine_filter('sk_downscale_max_600_600') }}">
-                                <div class="hover-text">
-                                    <h4>{{work.project}}</h4>
-                                    <hr class="line">
-                                    <small>{{ work.type|join(', ') }}</small>
-                                    <div class="clearfix"></div>
-                                    <i class="fa fa-link"></i>
-                                </div>
-
-                                {#<img style="max-height: 600px;max-width: 600px;" itemprop="image" alt="{{photo.title}}" class="img-responsive child" src="{{ photo.getWebPath | imagine_filter('sk_downscale_max_600_600') }}" />#}
-                                <img class="img-responsive" src="{{ work.getWebPath | imagine_filter('sk_downscale_max_600_600') }}" />
-
-                                {#<img src="img/works/1.jpg" class="img-responsive" alt="...">#}
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            {% endfor %}
-
-
-
-            {#<div class="col-sm-6 col-md-4 col-lg-4 print">
-                <div class="portfolio-item">
-                    <div class="hover-bg">
-                        <a href="img/works/placeholder-big.jpg">
-                            <div class="hover-text">
-                                <h4>Project Title</h4>
-                                <hr class="line">
-                                <small>Web Design, Branding</small>
-                                <div class="clearfix"></div>
-                                <i class="fa fa-link"></i>
-                            </div>
-                            <img src="img/works/2.jpg" class="img-responsive" alt="...">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 graphic web">
-                <div class="portfolio-item">
-                    <div class="hover-bg">
-                        <a href="img/works/placeholder-big.jpg">
-                            <div class="hover-text">
-                                <h4>Project Title</h4>
-                                <hr class="line">
-                                <small>Web Design, Branding</small>
-                                <div class="clearfix"></div>
-                                <i class="fa fa-link"></i>
-                            </div>
-                            <img src="img/works/3.jpg" class="img-responsive" alt="...">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 print web">
-                <div class="portfolio-item">
-                    <div class="hover-bg">
-                        <a href="img/works/placeholder-big.jpg">
-                            <div class="hover-text">
-                                <h4>Project Title</h4>
-                                <hr class="line">
-                                <small>Web Design, Branding</small>
-                                <div class="clearfix"></div>
-                                <i class="fa fa-link"></i>
-                            </div>
-                            <img src="img/works/4.jpg" class="img-responsive" alt="...">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 graphic app">
-                <div class="portfolio-item">
-                    <div class="hover-bg">
-                        <a href="img/works/placeholder-big.jpg">
-                            <div class="hover-text">
-                                <h4>Project Title</h4>
-                                <hr class="line">
-                                <small>Web Design, Branding</small>
-                                <div class="clearfix"></div>
-                                <i class="fa fa-link"></i>
-                            </div>
-                            <img src="img/works/5.jpg" class="img-responsive" alt="...">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 app web">
-                <div class="portfolio-item">
-                    <div class="hover-bg">
-                        <a href="img/works/placeholder-big.jpg">
-                            <div class="hover-text">
-                                <h4>Project Title</h4>
-                                <hr class="line">
-                                <small>Web Design, Branding</small>
-                                <div class="clearfix"></div>
-                                <i class="fa fa-link"></i>
-                            </div>
-                            <img src="img/works/6.jpg" class="img-responsive" alt="...">
-                        </a>
-                    </div>
-                </div>
-            </div>#}
         </div>
     </div>
 </section>

@@ -26,3 +26,14 @@ post:
 contact:
     path:     /contact
     defaults: { _controller: "AppBundle:Default:contact" }
+    
+    
+ajax_posts_show_more:
+    path:     /{_locale}/ajax/show-more/posts
+    defaults: { _controller: "AppBundle:Ajax:postsShowMore" }
+    
+    
+        
+ajax_works:
+    path:     /{_locale}/ajax/works
+    defaults: { _controller: "AppBundle:Ajax:works" }

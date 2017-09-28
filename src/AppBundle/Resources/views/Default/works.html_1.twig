@@ -1,0 +1,147 @@
+<!-- Portfolio Section -->
+<section id="works">
+    <div class="container">
+        <div class="section-title text-center center wow fadeInUp">
+            <h2>{% trans %}works_our{% endtrans %}</h2>
+            <div class="line">
+            </div>
+            <p>{% trans %}works_intro{% endtrans %}</p>
+        </div>
+        <div class="space"></div>
+        <div class="categories">
+            <ul class="cat text-center">
+                <li>
+                    <ol id="filters" class="type">
+                        <li><a href="#" data-filter="*" class="active">{% trans %}works_type_all{% endtrans %}</a></li>
+                            {% for type in types %}
+                            <li><a href="#" data-filter=".{{type.id}}">{{ type}}</a></li>
+                            {% endfor %}
+
+
+                    </ol>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+        <div id="lightbox" class="row wow fadeInUp">
+
+
+            {% for work in works %}
+
+                
+
+                {% set t = "" %}
+                {% for type in work.type %}
+                    {% set t = t ~" "~ type.id %}
+                {% endfor %}
+
+
+
+
+                <div class="col-sm-6 col-md-4 col-lg-4 {{ t }}">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="{{ work.getWebPath | imagine_filter('sk_downscale_max_600_600') }}">
+                                <div class="hover-text">
+                                    <h4>{{work.project}}</h4>
+                                    <hr class="line">
+                                    <small>{{ work.type|join(', ') }}</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-link"></i>
+                                </div>
+
+                                {#<img style="max-height: 600px;max-width: 600px;" itemprop="image" alt="{{photo.title}}" class="img-responsive child" src="{{ photo.getWebPath | imagine_filter('sk_downscale_max_600_600') }}" />#}
+                                <img class="img-responsive" src="{{ work.getWebPath | imagine_filter('sk_downscale_max_600_600') }}" />
+
+                                {#<img src="img/works/1.jpg" class="img-responsive" alt="...">#}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+
+
+
+            {#<div class="col-sm-6 col-md-4 col-lg-4 print">
+                <div class="portfolio-item">
+                    <div class="hover-bg">
+                        <a href="img/works/placeholder-big.jpg">
+                            <div class="hover-text">
+                                <h4>Project Title</h4>
+                                <hr class="line">
+                                <small>Web Design, Branding</small>
+                                <div class="clearfix"></div>
+                                <i class="fa fa-link"></i>
+                            </div>
+                            <img src="img/works/2.jpg" class="img-responsive" alt="...">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 graphic web">
+                <div class="portfolio-item">
+                    <div class="hover-bg">
+                        <a href="img/works/placeholder-big.jpg">
+                            <div class="hover-text">
+                                <h4>Project Title</h4>
+                                <hr class="line">
+                                <small>Web Design, Branding</small>
+                                <div class="clearfix"></div>
+                                <i class="fa fa-link"></i>
+                            </div>
+                            <img src="img/works/3.jpg" class="img-responsive" alt="...">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 print web">
+                <div class="portfolio-item">
+                    <div class="hover-bg">
+                        <a href="img/works/placeholder-big.jpg">
+                            <div class="hover-text">
+                                <h4>Project Title</h4>
+                                <hr class="line">
+                                <small>Web Design, Branding</small>
+                                <div class="clearfix"></div>
+                                <i class="fa fa-link"></i>
+                            </div>
+                            <img src="img/works/4.jpg" class="img-responsive" alt="...">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 graphic app">
+                <div class="portfolio-item">
+                    <div class="hover-bg">
+                        <a href="img/works/placeholder-big.jpg">
+                            <div class="hover-text">
+                                <h4>Project Title</h4>
+                                <hr class="line">
+                                <small>Web Design, Branding</small>
+                                <div class="clearfix"></div>
+                                <i class="fa fa-link"></i>
+                            </div>
+                            <img src="img/works/5.jpg" class="img-responsive" alt="...">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 app web">
+                <div class="portfolio-item">
+                    <div class="hover-bg">
+                        <a href="img/works/placeholder-big.jpg">
+                            <div class="hover-text">
+                                <h4>Project Title</h4>
+                                <hr class="line">
+                                <small>Web Design, Branding</small>
+                                <div class="clearfix"></div>
+                                <i class="fa fa-link"></i>
+                            </div>
+                            <img src="img/works/6.jpg" class="img-responsive" alt="...">
+                        </a>
+                    </div>
+                </div>
+            </div>#}
+        </div>
+    </div>
+</section>
