@@ -24,10 +24,28 @@
 
     $(document).ready(function () {
 
-        {#var limit_posts = 6;
-        var offset_posts = -6;
+    {#var limit_posts = 6;
+    var offset_posts = -6;
 
-        var $container = $('#blog-masonry');
+    var $container = $('#blog-masonry');
+    $container.imagesLoaded(function () {
+        // init Isotope after all images have loaded
+        $container.isotope({
+            // options
+            itemSelector: '.blog',
+            masonry: {
+                //columnWidth: 160,
+                isFitWidth: true
+            }
+        });
+    });
+
+    $('.append-button').on('click', function () {
+        // create new item elements
+        getItemElements();
+
+        $container.isotope('destroy'); //destroying isotope
+        $container = $('#blog-masonry');
         $container.imagesLoaded(function () {
             // init Isotope after all images have loaded
             $container.isotope({
@@ -40,30 +58,12 @@
             });
         });
 
-        $('.append-button').on('click', function () {
-            // create new item elements
-            getItemElements();
 
-            $container.isotope('destroy'); //destroying isotope
-            $container = $('#blog-masonry');
-            $container.imagesLoaded(function () {
-                // init Isotope after all images have loaded
-                $container.isotope({
-                    // options
-                    itemSelector: '.blog',
-                    masonry: {
-                        //columnWidth: 160,
-                        isFitWidth: true
-                    }
-                });
+        $('html, body').animate({scrollTop: $("#posts_button").offset().top - 1400}, 1000);
+
+    });#}
+                getItemElements(1);
             });
-
-
-            $('html, body').animate({scrollTop: $("#posts_button").offset().top - 1400}, 1000);
-
-        });#}
-        getItemElements(1);
-    });
 
 
 
@@ -87,9 +87,17 @@
             <ul class="cat text-center">
                 <li>
                     <ol id="filters" class="type">
-                        <li>{#<a href="#" data-filter="*" class="active">{% trans %}works_type_all{% endtrans %}</a></li>#}
+                        {#<li><a href="#" data-filter="*" class="active">{% trans %}works_type_all{% endtrans %}</a></li>#}
                             {% for type in types %}
-                            <li><a href="#" onclick="getItemElements({{type.id}});
+
+{#                                {% if type.id == 1 %}
+                                    {% set classe = 'active' %}
+                                {% else %}
+                                    {% set classe = '' %}
+                                {% endif %}#}
+
+
+                            <li><a href="#" class="" onclick="getItemElements({{type.id}});
                                     return false;" data-filter=".{{type.id}}">{{ type}}</a></li>
                             {% endfor %}
 
