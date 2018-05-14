@@ -3,7 +3,7 @@ MAP -->
 =============================================== */
 
 var locations = [
-	['<div class="infobox"><h3 class="title"><a href="#">MY OFFICE</a></h3><span>Rua da Misericórdia, nº 19 <br/>9500-093 Ponta Delgada, Azores, Portugal</span><br></div>', 37.74073206132569,-25.666473135352135, 2]
+	['<div class="infobox"><h3 class="title"><a href="#">MY OFFICE</a></h3><span>Rua d\'água, nº 33 <br/>9500-016 Ponta Delgada, Azores, Portugal</span><br></div>', 37.742398,-25.668672, 2]
 	];     
 	var map = new google.maps.Map(document.getElementById('map'), {
 		zoom: 16,
